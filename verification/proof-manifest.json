@@ -1,0 +1,3708 @@
+{
+  "status": "PASS",
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "verifier_sha256": "cfbe3bcdd31fc14682a1de2674fee54fcbd5d9ef6591b5c15390ca2e32b36001",
+  "toolchain_sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+  "modules": [
+    {
+      "file": "Syntax.lean",
+      "sha256": "18cf17d3566941726861c0c24bf200c02b972d1a51960860edfb158c69c25c8b",
+      "theorems": [
+        "cons_zero",
+        "cons_succ",
+        "cons_lift",
+        "eval_rename",
+        "image_env",
+        "eval_image"
+      ]
+    },
+    {
+      "file": "Schemes.lean",
+      "sha256": "acba3b219bf5ae3df6c9ec1816bb22dcdac7878fd439541d7a563c0d799b10f9",
+      "theorems": [
+        "collection_separation_replacement"
+      ]
+    },
+    {
+      "file": "Translation.lean",
+      "sha256": "2af22085ea928ee40ede19df7b20355884c566b3d8d6b7b91f1f118434b196f0",
+      "theorems": [
+        "atom_env",
+        "cons_map",
+        "eval_translate"
+      ]
+    },
+    {
+      "file": "SchemeTransfer.lean",
+      "sha256": "86e5b49f6d3310e0f552b5a7faa8d3b2009162d1f9901641cca2cf3719e928b2",
+      "theorems": [
+        "lift_env",
+        "separation_transfer",
+        "collection_transfer",
+        "replacement_transfer"
+      ]
+    },
+    {
+      "file": "SetOperations.lean",
+      "sha256": "93f753883c3feb9a9dad273571a87af93707f5416a813337df8f50f199d42f1a",
+      "theorems": [
+        "empty_transfer",
+        "pairing_transfer",
+        "union_transfer",
+        "subset_forward",
+        "subset_representative",
+        "powerset_transfer"
+      ]
+    },
+    {
+      "file": "InfinityTransfer.lean",
+      "sha256": "d9e1ac4bfe1ea367e41b8b8723c1990b506666801f4a2fd2e7df9b2526cdd52b",
+      "theorems": [
+        "isEmpty_forward",
+        "successor_forward",
+        "infinity_transfer",
+        "base_collection_transfer"
+      ]
+    },
+    {
+      "file": "BehaviorQuotient.lean",
+      "sha256": "7491f6d5e1ff6a5a8a7ddac24182c48581b222f5919d84d4518fe2b52fc4ad11",
+      "theorems": [
+        "behavior_refl",
+        "behavior_symm",
+        "behavior_trans",
+        "behavior_bisimulation",
+        "behavior_of_children",
+        "behavior_code_eq",
+        "behavior_code_onto",
+        "behavior_exact_members",
+        "behavior_quotient_extensional",
+        "behavior_base_transfer"
+      ]
+    },
+    {
+      "file": "WellFoundedParameters.lean",
+      "sha256": "99e82c8171e22c1cfde14ef94818993e9b203104365791bb5f7c656124278505",
+      "theorems": [
+        "behavior_acc",
+        "behavior_eq_of_acc",
+        "wellFounded_fiber_singleton",
+        "wellFounded_member_reflection"
+      ]
+    },
+    {
+      "file": "DefinableKernel.lean",
+      "sha256": "bcb1a8afdbae8ab10f5e459980762f5d65f5d641d10a72397bac78fe8b14b21f",
+      "theorems": [
+        "eval_memberFromKernel",
+        "quotient_base_of_definable_behavior"
+      ]
+    },
+    {
+      "file": "InternalSyntax.lean",
+      "sha256": "e2cc1ae93eef1f8b669769cdc380f51f59cc7772d54869a89a769b7b29619ca1",
+      "theorems": [
+        "eval_disj",
+        "eval_iffF",
+        "eval_pairFormula",
+        "eval_orderedPairFormula",
+        "eval_relatedFormula",
+        "eval_bisimFormula",
+        "eval_codedBehaviorFormula",
+        "codedBehavior_implies_behavior"
+      ]
+    },
+    {
+      "file": "PairCoding.lean",
+      "sha256": "4569d6fd1514683861f5aa3ac336abf6f60844cd3f923023ba2c85505243f8f6",
+      "theorems": [
+        "pair_unique",
+        "orderedPair_exists",
+        "orderedPair_unique",
+        "orderedPair_first",
+        "orderedPair_union",
+        "orderedPair_injective",
+        "codedRelation_component_bound"
+      ]
+    },
+    {
+      "file": "RelationComprehension.lean",
+      "sha256": "426341710aecef9a473696e1e0992ed9c45a02499215b9db015d91439034e44a",
+      "theorems": [
+        "relation_env",
+        "eval_relationFormula",
+        "orderedPair_bound",
+        "bounded_relation_comprehension"
+      ]
+    },
+    {
+      "file": "InternalInverse.lean",
+      "sha256": "cd95e257696976654e8670814c39ed7f58718ced47f803015ecf4102b6510991",
+      "theorems": [
+        "codedRelation_inverse",
+        "codedBehavior_bisimulation",
+        "codedBehavior_symm"
+      ]
+    },
+    {
+      "file": "InternalComposition.lean",
+      "sha256": "2544a40f47b6bb518cd33082cacadadf6cbe5ede7f5cfc3249c9ac918b575a34",
+      "theorems": [
+        "binary_union_exists",
+        "codedRelation_union",
+        "eval_compositionFormula",
+        "codedRelation_composition",
+        "codedBehavior_trans"
+      ]
+    },
+    {
+      "file": "InternalBehavior.lean",
+      "sha256": "71691d4492f55c20d08a032766a48cf25602cd461a1cc5515035b3bdafa30d32",
+      "theorems": [
+        "eval_augmentedRelatedFormula",
+        "eval_augmentedBisimFormula",
+        "eval_internalBehaviorFormula",
+        "internalBehavior_refl",
+        "bisimulation_congr",
+        "bisimulation_comp",
+        "internalBehavior_symm",
+        "internalBehavior_trans",
+        "internalBehavior_bisimulation",
+        "internalBehavior_implies_behavior"
+      ]
+    },
+    {
+      "file": "InternalQuotient.lean",
+      "sha256": "c625ec46f374cb298bd6adeae2a951ef7e9bb9ee7134650adab24e4914216647",
+      "theorems": [
+        "internal_code_eq",
+        "internal_code_onto",
+        "internal_exact_members",
+        "internal_formula_translation",
+        "internal_separation",
+        "internal_collection",
+        "internal_wellFounded_fiber",
+        "internal_wellFounded_member"
+      ]
+    },
+    {
+      "file": "WitnessCollection.lean",
+      "sha256": "013bbbc3f56f6450265a7a4640752644766cfde74edb51837937633758fa1061",
+      "theorems": [
+        "codedRelation_family_union",
+        "augmented_family_union",
+        "eval_forwardWitnessFormula",
+        "collect_forward_witnesses"
+      ]
+    },
+    {
+      "file": "InternalExtensionality.lean",
+      "sha256": "6cc54293c05488ef5eaca9ea496ee99fe0e49d83eefc7d9c2b20395bd0dd87dd",
+      "theorems": [
+        "augmented_inverse",
+        "augmented_merge",
+        "codedRelation_singleton",
+        "internalBehavior_add_root",
+        "internalBehavior_of_children",
+        "internal_extensional",
+        "internal_base_model"
+      ]
+    },
+    {
+      "file": "GraphAxioms.lean",
+      "sha256": "cce6a291d346fc84d960bdb936e775abf2aaa51f8a0b4be76db403865034fe9c",
+      "theorems": [
+        "eval_graphCodeFormula",
+        "eval_functionCodeFormula",
+        "eval_decorationCodeFormula",
+        "eval_afaSentence"
+      ]
+    },
+    {
+      "file": "PairTransfer.lean",
+      "sha256": "f2f20bf0cd8906296998e9aaf5d9f2b5c22ced4b94a2e2f18d21e10f2d0081e8",
+      "theorems": [
+        "pair_forward",
+        "orderedPair_forward",
+        "codedRelation_forward",
+        "graphCode_forward"
+      ]
+    },
+    {
+      "file": "GraphLifting.lean",
+      "sha256": "bab778afdffd50355ab3dae673b192ae5d70c699d04476aa8052074045c532aa",
+      "theorems": [
+        "relation_comprehension_members",
+        "internal_graph_lift"
+      ]
+    },
+    {
+      "file": "BoffaAxiom.lean",
+      "sha256": "90e41d5367359facab94077e341a164b6c21acf01f2f648a23447ad2bddd511d",
+      "theorems": [
+        "bafa_extensional_realization",
+        "decoration_injective_edge_reflection"
+      ]
+    },
+    {
+      "file": "BoffaSyntax.lean",
+      "sha256": "05b926370f4b2b9dcc7d8c34f21e54f261666828f0d08018a94fb85a4005b7cc",
+      "theorems": [
+        "eval_transitiveFormula",
+        "eval_graphExtensionalFormula",
+        "eval_injectiveFormula",
+        "eval_rangeFormula",
+        "eval_endExtensionFormula",
+        "eval_boffaConclusionFormula",
+        "eval_bafaSentence"
+      ]
+    },
+    {
+      "file": "GraphBisimulation.lean",
+      "sha256": "483d6090700ed5ec38e3dfe82eb41a625488f4a2ad21c20095c2754971fbd335",
+      "theorems": [
+        "eval_graphBisimFormula",
+        "graphCode_endpoints",
+        "normalized_relation_comprehension",
+        "maximal_graph_bisim_exists"
+      ]
+    },
+    {
+      "file": "GraphBisimProperties.lean",
+      "sha256": "4a1a089007eaa2238e9af6b74d4baac14fba0cbb473846201f7c6263fc71ac87",
+      "theorems": [
+        "maximal_graph_bisim_refl",
+        "maximal_graph_bisim_symm",
+        "maximal_graph_bisim_trans",
+        "eval_graphRootFormula",
+        "maximal_graph_bisim_of_children"
+      ]
+    },
+    {
+      "file": "GraphClasses.lean",
+      "sha256": "a66d0ccc85de00e890aa3e8641fe722a7020672282c8a9419fd183d97c1e81de",
+      "theorems": [
+        "eval_graphClassFormula",
+        "graph_class_exists",
+        "graph_class_unique",
+        "graph_class_eq_iff",
+        "eval_graphClassNodeFormula",
+        "graph_class_nodes_exists"
+      ]
+    },
+    {
+      "file": "GraphQuotient.lean",
+      "sha256": "cdb4d8bb522c076a081d79726a2264ec6c554e95685bb072ad3560c2a85a5d45",
+      "theorems": [
+        "eval_graphQuotientEdgeFormula",
+        "graph_quotient_edges_exists",
+        "graph_quotient_edge_from_representative",
+        "graph_quotient_extensional",
+        "graph_quotient_realization"
+      ]
+    },
+    {
+      "file": "DecorationPullback.lean",
+      "sha256": "527c491b5147486525dc137c955035b466ec59c7fd5b1c89678db9be2f100906",
+      "theorems": [
+        "eval_pullbackFormula",
+        "graph_class_pullback_exists",
+        "graph_class_pullback_function",
+        "graph_class_pullback_decoration",
+        "bafa_graph_solvability"
+      ]
+    },
+    {
+      "file": "DecorationTransfer.lean",
+      "sha256": "ed2198dea1d45f2c4e135b58f3365269f4d43bf04f3e8bbcf1eb6d9de36507b4",
+      "theorems": [
+        "codedRelation_image",
+        "functionCode_forward",
+        "decoration_equal_rows",
+        "decoration_forward_saturated",
+        "internal_graph_solvability"
+      ]
+    },
+    {
+      "file": "BoundedAugmentedBisim.lean",
+      "sha256": "196b684adcd59607e20d8e18e7b10c5216fb8c57914e5b21e508f0d1c273b850",
+      "theorems": [
+        "eval_boundedAugmentedFormula",
+        "maximal_augmented_exists",
+        "maximal_augmented_symm",
+        "maximal_augmented_trans"
+      ]
+    },
+    {
+      "file": "BoundedBisimUpTo.lean",
+      "sha256": "b2f3b1574ffd49fc6584ec8c70526b824fe0b374bc82beb68a745a73094a42ee",
+      "theorems": [
+        "eval_bisimSandwichFormula",
+        "bisim_sandwich_absorb",
+        "bounded_bisimulation_up_to"
+      ]
+    },
+    {
+      "file": "RelationSupport.lean",
+      "sha256": "603208e4d3c9fed965258a62677855ec6a8737e79ef16176489ae652edf42251",
+      "theorems": [
+        "eval_relationSupportFormula",
+        "relation_support_exists",
+        "bisimulation_support_transitive",
+        "bounded_augmented_extension"
+      ]
+    },
+    {
+      "file": "InternalCoinduction.lean",
+      "sha256": "2d85277cd45d9071d513b957706155882d38bc234a49d9405f49553244ed1c02",
+      "theorems": [
+        "internal_coded_coinduction"
+      ]
+    },
+    {
+      "file": "InternalAFA.lean",
+      "sha256": "3c9babe176b34237e49b8df7370763c3639f150a5f397757131b11b82bafe1b4",
+      "theorems": [
+        "decoration_comparison_bisimulation",
+        "function_code_extensional",
+        "internal_decoration_unique",
+        "internal_afa"
+      ]
+    },
+    {
+      "file": "ModelBridge.lean",
+      "sha256": "86eabc1433c47cbd43a64e42c3e3a5905e81cd39b4f46301e5dd7d3357e47c58",
+      "theorems": [
+        "bafa_to_afa_model_existence",
+        "bridge_target_replacement",
+        "bridge_sentence_translation",
+        "bridge_translated_afa",
+        "bridge_parameter_semantics",
+        "bridge_external_wellFounded_fiber"
+      ]
+    },
+    {
+      "file": "ChoiceAxiom.lean",
+      "sha256": "d3628d211ee106d7c46e2bc10d60ebbb6b94ebe80fe923c57624857116b05cc1",
+      "theorems": [
+        "eval_choiceFunctionFormula",
+        "eval_choiceSentence",
+        "choiceFunction_forward_compatible"
+      ]
+    },
+    {
+      "file": "KernelClasses.lean",
+      "sha256": "2c173ec0a1c0288013c63f7e1d8c9be1fa4d1145eb5c80416c050e74c1e61b21",
+      "theorems": [
+        "eval_kernelClassFormula",
+        "kernel_class_exists",
+        "kernel_class_eq",
+        "eval_kernelClassFamilyFormula",
+        "kernel_class_family"
+      ]
+    },
+    {
+      "file": "ChoiceTransfer.lean",
+      "sha256": "cb623d3cabf63acbae18e3247c0665e9836f3e5c60cf9fd878cc465799fcd26d",
+      "theorems": [
+        "eval_coordinatedChoiceFormula",
+        "coordinated_choice_code",
+        "choice_transfer",
+        "internal_choice"
+      ]
+    },
+    {
+      "file": "ChoiceModelBridge.lean",
+      "sha256": "433ceaf1f6575fdd5ad91964a79cad039899e40b7a4d47ec84fa05ff854e0d73",
+      "theorems": [
+        "bafa_to_afa_choice_model_existence",
+        "bridge_translated_choice"
+      ]
+    },
+    {
+      "file": "IdentityLoss.lean",
+      "sha256": "48bbec1980881abbc4c2de441a05bd529d5e5bac315b8d1d0614b72cd180caff",
+      "theorems": [
+        "selfSingleton_same_code",
+        "bafa_selfSingleton_family",
+        "bafa_family_collapses",
+        "bafa_distinct_selfSingletons",
+        "bridge_not_injective",
+        "bridge_not_membership_reflecting"
+      ]
+    },
+    {
+      "file": "ParameterCriterion.lean",
+      "sha256": "4303d0015c127d58f02781cea606ba4aaafff3bcf298caf785b53109e0e84c9b",
+      "theorems": [
+        "augmented_bisimulation_restrict",
+        "coded_bisimulation_internalBehavior",
+        "parameter_injective_iff",
+        "parameter_member_reflection",
+        "transitive_parameter_forward",
+        "parameter_bijection",
+        "selfSingleton_parameter_preserved"
+      ]
+    },
+    {
+      "file": "FreshParameterLabels.lean",
+      "sha256": "91a7d6299e21adcc046fae49ceed5b1e1c5ce422382ee5ca6864c281c68493fd",
+      "theorems": [
+        "object_outside_set",
+        "fresh_orderedPair_tag",
+        "tagged_image_exists",
+        "eval_tagFunctionFormula",
+        "fresh_parameter_copy"
+      ]
+    },
+    {
+      "file": "RelativeRepresentatives.lean",
+      "sha256": "83b2e00c4455efa3cc8b59351a30fbdbe8b425d9823d834334d65762207c5d37",
+      "theorems": [
+        "eval_relativeRepresentativeFormula",
+        "relative_representatives",
+        "relative_internal_representatives"
+      ]
+    },
+    {
+      "file": "RelativeExtensionGraph.lean",
+      "sha256": "01d7cb7ddb1131d1dcd5b78916fac2b1c20a54937dc0f8af088a6196af8a2043",
+      "theorems": [
+        "relative_extension_graph",
+        "relative_graph_lift"
+      ]
+    },
+    {
+      "file": "RelativeParameterExtension.lean",
+      "sha256": "cb3a7c42717f86f41fff8ab405befae08bd2369dcd0e0d893510f7e19777975e",
+      "theorems": [
+        "relative_decoration_code",
+        "relative_parameter_extension",
+        "relative_parameter_extension_strong",
+        "relative_parameter_extension_iff"
+      ]
+    },
+    {
+      "file": "LiftComparison.lean",
+      "sha256": "cc66162b167439c7bc20f1c229a5e8fc66ea396c9e110b17660ce491b9f798e7",
+      "theorems": [
+        "eval_liftComparisonFormula",
+        "lift_comparison_exists",
+        "lift_comparison_unique",
+        "lift_comparison_injective",
+        "lift_comparison_members",
+        "lift_comparison_fixes_overlap"
+      ]
+    },
+    {
+      "file": "SolvabilityBridge.lean",
+      "sha256": "d78c91db6b86a04f64a667fce0ff7b0c763e0d5fb88ada000d7a7881a9e22a5c",
+      "theorems": [
+        "eval_graphSolvabilitySentence",
+        "internal_solvability_from_solutions",
+        "internal_afa_from_solutions",
+        "solvability_to_afa_model_existence",
+        "bafa_quotient_factors_through_solvability"
+      ]
+    },
+    {
+      "file": "TheorySeparation.lean",
+      "sha256": "42d5d89cfc3cb357f42d926b28ccfa67981a61870d0a7e638a5a08c3e1b53d3a",
+      "theorems": [
+        "selfSingleton_decoration",
+        "afa_selfSingleton_unique",
+        "afa_not_bafa",
+        "afa_graph_solvability",
+        "bafa_quotient_separates",
+        "solvable_non_bafa_model_existence"
+      ]
+    },
+    {
+      "file": "ParameterFamilies.lean",
+      "sha256": "82f1ff1a27fec0e830332b78262555a7fdd7b78f9cc8f1a3bb7c495235c22cbe",
+      "theorems": [
+        "parameter_family_union_criterion",
+        "transitive_parameter_family_union",
+        "simultaneous_parameter_extension_iff",
+        "bafa_incompatible_preservable_parameters"
+      ]
+    },
+    {
+      "file": "ParameterSemantics.lean",
+      "sha256": "e88b326617076aebc562ad90dc5e914fc89b9f0a94287e1b0f9c68e59d64592f",
+      "theorems": [
+        "eval_bijective_members",
+        "parameter_code_bijective",
+        "parameter_original_formula_semantics"
+      ]
+    },
+    {
+      "file": "ChoiceFreeLifting.lean",
+      "sha256": "bdf467017b8069ce831d18f6428d54e3bdaf94c66954280364e0bf6a7904805e",
+      "theorems": [
+        "decoration_transitive_range",
+        "transitive_lift_from_solutions",
+        "transitive_lift_without_choice"
+      ]
+    },
+    {
+      "file": "ChoiceFreeParameters.lean",
+      "sha256": "bd02e98a09b28d51048036520990f6c1097bac0f6f368c022bfba55ed0eda29d",
+      "theorems": [
+        "eval_unusedParameterFormula",
+        "replace_section_representatives",
+        "relative_graph_lift_from_solutions",
+        "relative_parameter_extension_without_choice",
+        "relative_parameter_extension_without_choice_iff",
+        "simultaneous_parameter_extension_without_choice_iff"
+      ]
+    },
+    {
+      "file": "CoherentRestrictions.lean",
+      "sha256": "860cd123bfc203507734c63797ab98310dbdad80cf8efe19cca8132f118aa132",
+      "theorems": [
+        "subset_image_reflects",
+        "subset_image_injective",
+        "subset_lift_unique",
+        "transitivity_reflected_on_subsets",
+        "powerset_parameter_preserved",
+        "transitive_subset_lift_unique",
+        "subset_family_lift_unique",
+        "simultaneous_exact_restrictions"
+      ]
+    },
+    {
+      "file": "BehaviorChoice.lean",
+      "sha256": "9a0f9950294ca85203f208a3e3a0674bea66a95c5d02dac30dbdebea9706a866",
+      "theorems": [
+        "eval_behaviorChoiceRelationFormula",
+        "eval_behaviorChoiceSentence",
+        "behavior_choice_relation_forward",
+        "eval_choicePullbackFormula",
+        "behavior_choice_relation_pullback",
+        "quotient_choice_iff_behavior_choice",
+        "source_choice_implies_behavior_choice",
+        "translated_choice_iff_behavior_sentence",
+        "target_choice_on_injective_members"
+      ]
+    },
+    {
+      "file": "FiberChoice.lean",
+      "sha256": "b2197b18395ef596a82db59c15cd2be1d5ab596cd3af41b707eb964887df4e04",
+      "theorems": [
+        "eval_behaviorHomogeneousFormula",
+        "eval_fiberChoiceSentence",
+        "eval_relationRowFormula",
+        "relation_row_exists",
+        "relation_row_unique",
+        "relation_row_family",
+        "eval_resolvedChoiceFormula",
+        "fiber_choice_resolves_behavior_relation",
+        "fiber_choice_lifts_target_function",
+        "source_choice_iff_behavior_and_fiber",
+        "source_choice_iff_target_and_fiber",
+        "choice_sentence_decomposition"
+      ]
+    },
+    {
+      "file": "BafaFiberChoice.lean",
+      "sha256": "0253f6194df821ccc6bcf194f8e34487acbd9f82eb10f4cc9d0d96515a5f7f91",
+      "theorems": [
+        "eval_codedImageSetFormula",
+        "coded_image_set_exists",
+        "coded_image_set_family",
+        "eval_injectionChoiceFormula",
+        "choice_transports_injection",
+        "fiber_choice_transports_injection",
+        "bafa_fiber_choice_implies_choice",
+        "bafa_fiber_choice_iff_choice",
+        "bafa_fiber_choice_implies_target_choice",
+        "bafa_fiber_choice_sentence_equiv"
+      ]
+    },
+    {
+      "file": "LocalChoiceLoss.lean",
+      "sha256": "dc54a2816bbc2d2b5ac2ef5a1ec2eeceec2c9900ae2af1fedeba18d1966de2b4",
+      "theorems": [
+        "no_choice_family_nonempty",
+        "selfSingleton_code",
+        "constant_nonempty_family_code",
+        "selfSingleton_has_choice",
+        "bafa_local_choice_failure_collapses"
+      ]
+    },
+    {
+      "file": "FixedSolvability.lean",
+      "sha256": "b62ff95ae42b8d2b9fafce4f0a15f4c6f0252ad000ac42dea7f05473c37e611d",
+      "theorems": [
+        "eval_fixedGraphSolvabilitySentence",
+        "fixed_solvability_implies_solvability",
+        "function_domain_restriction",
+        "membership_graph_identity_decoration",
+        "afa_fixed_graph_solvability",
+        "fixed_solutions_parameter_extension",
+        "fixed_solutions_parameter_extension_iff",
+        "fixed_solutions_parameter_family_iff",
+        "fixed_solvability_to_afa_model_existence",
+        "fixed_solvable_non_bafa_model_existence"
+      ]
+    },
+    {
+      "file": "LeastGraphRelation.lean",
+      "sha256": "87d14cbbf01ded461f17a9a9dcd0d22e158c7c2f830e9fd5c6ee7a266bf31176",
+      "theorems": [
+        "eval_rowMatchingFormula",
+        "eval_graphPreFixedFormula",
+        "rowMatching_mono",
+        "least_graph_relation_exists",
+        "least_graph_relation_fixed",
+        "least_graph_relation_symm",
+        "least_graph_relation_trans",
+        "least_graph_relation_preserves_parameter",
+        "least_graph_class_eq_iff",
+        "least_graph_quotient_edge_from_representative",
+        "least_graph_quotient_extensional",
+        "least_graph_quotient_preserves_parameter",
+        "least_extensional_graph_quotient_exists"
+      ]
+    },
+    {
+      "file": "BafaFixedSolvability.lean",
+      "sha256": "ea322eda7e7294c824127e4600914e7b5d0642f5af14e51faa41ad59e87d5a6f",
+      "theorems": [
+        "eval_classLabelFormula",
+        "class_label_total",
+        "class_label_unique",
+        "class_label_injective",
+        "class_label_image",
+        "eval_labeledEdgeFormula",
+        "labeled_graph_exists",
+        "labeled_edge_at_classes",
+        "eval_labeledPullbackFormula",
+        "labeled_pullback_exists",
+        "bafa_fixed_graph_solvability",
+        "bafa_quotient_factors_through_fixed"
+      ]
+    },
+    {
+      "file": "InternalFoundation.lean",
+      "sha256": "26213b7858970ea539f0674a3e5746c701f3dd2881ee6bd2195393c712f871e2",
+      "theorems": [
+        "eval_internallyWellFoundedFormula",
+        "eval_nontrivialFiberFormula",
+        "internally_wellFounded_member_fiber",
+        "internally_wellFounded_root_fiber",
+        "internally_wellFounded_membership",
+        "internally_wellFounded_reflects",
+        "internally_wellFounded_transitive_iff",
+        "target_wellFounded_member_fiber",
+        "target_wellFounded_transitivity_reflects",
+        "wellFounded_target_unique_source"
+      ]
+    },
+    {
+      "file": "ChoiceFactorization.lean",
+      "sha256": "123b5aa8e1a946813e606d4638fdb5169a7ceaef9509f98d7007e6a2f256d485",
+      "theorems": [
+        "homogeneous_choice_resolves_relation",
+        "choice_implies_homogeneous_selection",
+        "choice_iff_homogeneous_factorization",
+        "behavior_selection_is_homogeneous",
+        "fiber_choice_is_homogeneous_choice",
+        "behavior_choice_split_via_homogeneous"
+      ]
+    },
+    {
+      "file": "FunctionalPresentation.lean",
+      "sha256": "43574b38fbb4e1a5394eea415800a2d3d3ad58aceefe1ba81865d3240a1e8e80",
+      "theorems": [
+        "eval_rowFunctionFormula",
+        "graph_functional_presentation",
+        "eval_functionalEdgeFormula",
+        "functional_graph_presentation",
+        "decoration_iff_functional",
+        "endExtension_iff_functional_fixed",
+        "fixed_solvability_iff_functional",
+        "eval_fixedSentence_functional",
+        "functional_row_contents",
+        "graph_extensional_iff_row_injective",
+        "bafa_iff_functional",
+        "eval_bafaSentence_functional",
+        "functional_fixed_parameter_extension_iff"
+      ]
+    },
+    {
+      "file": "FunctionalNormalization.lean",
+      "sha256": "325003b580d8affb172255fc661137fa47f681f84626df6b40fad882a29d51fc",
+      "theorems": [
+        "coded_function_domain",
+        "truncated_graph_presentation",
+        "decoration_iff_truncated_functional",
+        "truncated_graph_fixes_parameter",
+        "functional_normalization",
+        "fixed_solvability_iff_unrestricted_functional",
+        "eval_fixedSentence_unrestricted_functional",
+        "solvability_iff_unrestricted_functional",
+        "afa_iff_unrestricted_functional",
+        "eval_solvabilitySentence_unrestricted_functional",
+        "eval_afaSentence_unrestricted_functional"
+      ]
+    },
+    {
+      "file": "ClosedGraphPreservation.lean",
+      "sha256": "31d75ad5b17be064052aebeebb425540594324f0a460321403f2feaf1e32c776",
+      "theorems": [
+        "eval_graphClosedFormula",
+        "least_relation_preserves_closed_extensional",
+        "least_classes_injective_on_closed",
+        "least_quotient_reflects_closed_edges",
+        "parameter_graph_closed",
+        "least_quotient_preserves_all_closed"
+      ]
+    },
+    {
+      "file": "LeastGraphEquivariance.lean",
+      "sha256": "7bf78378579252842d0733fed75837038e71359e41e7237cfb080476bdd95ca4",
+      "theorems": [
+        "graph_iso_value",
+        "graph_iso_inverse",
+        "eval_isoPullbackFormula",
+        "least_relation_iso_forward",
+        "least_relation_iso_iff",
+        "least_graph_iso_edge_forward",
+        "least_graph_iso_edge_iff"
+      ]
+    },
+    {
+      "file": "LeastQuotientMaps.lean",
+      "sha256": "9785c27b2ec5af830e137c629ae07326413b5c3cc5f2a84ae6d80e9ba5195a73",
+      "theorems": [
+        "eval_quotientMapFormula",
+        "quotient_image_unique",
+        "least_quotient_map_exists",
+        "quotient_map_identity",
+        "quotient_map_composition",
+        "quotient_map_unique",
+        "quotient_map_family_lift"
+      ]
+    },
+    {
+      "file": "MembershipSymmetry.lean",
+      "sha256": "b0720f4d1d5a770ce78b6ae49917bc2f3e893ef468da424a4f8fa0f67ba67199",
+      "theorems": [
+        "membership_iso_bisimulation",
+        "membership_iso_over_quotient",
+        "membership_iso_root_code",
+        "membership_automorphism_rigid",
+        "membership_iso_unique",
+        "membership_iso_iff_same_code",
+        "graph_iso_membership_iff",
+        "graph_iso_composition",
+        "injective_decoration_graph_iso",
+        "graph_automorphism_transport",
+        "bafa_realizes_invisible_symmetries"
+      ]
+    },
+    {
+      "file": "ModelMaps.lean",
+      "sha256": "640c9fc19a2de580c4adde955fbd4f49d81006a91fdb398d3086d0976facf9da",
+      "theorems": [
+        "elementary_map_identity",
+        "elementary_map_comp",
+        "elementary_map_injective",
+        "elementary_map_internal_behavior",
+        "uniform_behavior_translation",
+        "behavior_map_code",
+        "behavior_map_elementary",
+        "behavior_map_unique",
+        "behavior_map_identity",
+        "behavior_map_comp",
+        "behavior_map_surjective",
+        "behavior_map_identity_iff",
+        "locally_internal_map_behavior",
+        "locally_internal_elementary_map_trivial_quotient",
+        "bafa_bridge_elementary_map"
+      ]
+    },
+    {
+      "file": "QuotientStability.lean",
+      "sha256": "7c42cbc257dbd82b4c958b17862b4938c481634aa1f95217c79af84a7f5d3e1d",
+      "theorems": [
+        "bounded_augmented_up_to",
+        "eval_pairBehaviorWitnessFormula",
+        "collect_bounded_behavior_witnesses",
+        "internal_augmented_coinduction",
+        "quotient_internal_behavior_eq",
+        "second_code_injective",
+        "second_code_membership",
+        "bijective_membership_elementary",
+        "second_code_elementary",
+        "quotient_flatten_code",
+        "quotient_code_flatten",
+        "quotient_flatten_membership",
+        "quotient_flatten_elementary",
+        "behavior_translation_idempotent",
+        "quotient_flatten_natural"
+      ]
+    },
+    {
+      "file": "SupportedChoice.lean",
+      "sha256": "4a4cdc50c00fa8400795f97433b2741688edd4dfb6e1691c3dc7c50c26d984b0",
+      "theorems": [
+        "elementary_map_coded_relation",
+        "pair_swap_moves_choice",
+        "supported_pair_family_no_choice",
+        "supported_pair_source_not_choice",
+        "selfSingleton_pair_family_quotient_choice",
+        "supported_quine_pairs_local_choice_loss"
+      ]
+    },
+    {
+      "file": "BafaModelObstructions.lean",
+      "sha256": "ef2474bba313bad025ea62ecacefd410412d3e6d5fe4026aade8d78739e1268d",
+      "theorems": [
+        "no_coded_injection_powerset",
+        "bafa_selfSingleton_outside_set",
+        "bafa_selfSingleton_fiber_unbounded",
+        "bafa_distinct_two_cycle",
+        "eval_quineRelativeFoundationSentence",
+        "rank_over_quines_relative_foundation",
+        "quine_relative_foundation_not_bafa"
+      ]
+    },
+    {
+      "file": "LeastClosedRestriction.lean",
+      "sha256": "3e155e01e54c36ea263072a83f1d28bb9e18d0ac36e31db78ea4edbf4d96f3ce",
+      "theorems": [
+        "closed_induced_graph_exists",
+        "least_relation_closed_restriction",
+        "cover_least_restriction",
+        "glued_least_local_iff",
+        "glued_least_equivalence",
+        "glued_least_fixed",
+        "glued_least_minimal_locally_coded"
+      ]
+    },
+    {
+      "file": "InternalOmega.lean",
+      "sha256": "32d71d5f742750cefcea084f317838b916fa26131ce1897243a377b08be68ee8",
+      "theorems": [
+        "eval_successorFormula",
+        "eval_inductiveFormula",
+        "eval_omegaFormula",
+        "successor_exists",
+        "successor_unique",
+        "internal_omega_exists",
+        "internal_omega_unique",
+        "internal_omega_formula_induction",
+        "internal_omega_transitive",
+        "internal_omega_members_transitive_irreflexive",
+        "internal_omega_zero_or_successor",
+        "internal_omega_successor_injective",
+        "internal_omega_members_wellFounded",
+        "internal_omega_wellFounded",
+        "internal_omega_quotient"
+      ]
+    },
+    {
+      "file": "InternalIteration.lean",
+      "sha256": "82bfccb23b66aa6e66ca02cb882f48e2186ed757c13f0e1f75bea0061bd8ce4b",
+      "theorems": [
+        "eval_unionClosureStepFormula",
+        "union_closure_step_exists",
+        "union_closure_step_unique",
+        "coded_function_append",
+        "eval_closureIterationFormula",
+        "closure_iteration_zero",
+        "closure_iteration_extend",
+        "closure_iteration_exists",
+        "eval_iterationAgreementFormula",
+        "closure_iteration_agree",
+        "eval_iterationValueFormula",
+        "closure_iteration_value_exists",
+        "closure_iteration_value_unique",
+        "closure_iteration_values_set",
+        "transitive_cover_exists",
+        "transitive_closure_exists"
+      ]
+    },
+    {
+      "file": "DefinableClosedCover.lean",
+      "sha256": "7cbb012569894c63c71813a1e09b2812ef88ee90f22e20911d590786e5c3b17a",
+      "theorems": [
+        "transitive_sets_cover",
+        "transitive_sets_directed",
+        "eval_leastGraphFormula",
+        "edge_insert_env",
+        "eval_inducedEdgesFormula",
+        "global_edge_env",
+        "eval_globalLeastFormula",
+        "defined_least_iff_glued",
+        "defined_least_equivalence",
+        "defined_least_fixed",
+        "defined_least_minimal_definable",
+        "eval_prunedMemberFormula",
+        "pruned_least_properties"
+      ]
+    },
+    {
+      "file": "GlobalLeastQuotient.lean",
+      "sha256": "07b64961a554972feb2e09104cb8ee8909a82debfb9b0d656cfb5dd70c46f761",
+      "theorems": [
+        "least_global_code_eq",
+        "least_global_code_onto",
+        "least_global_exact_members",
+        "least_global_extensional",
+        "parameter_atom_env",
+        "parameter_quantifier_env",
+        "eval_translate_parameters",
+        "eval_leastGlobalEqualFormula",
+        "eval_leastGlobalMemberFormula",
+        "least_global_formula_translation"
+      ]
+    },
+    {
+      "file": "PrunedQuotientRows.lean",
+      "sha256": "eb09faa8580c0c5c5d04c5fc4599ae05cf66f2daf2e2d54e7522b4963c68658d",
+      "theorems": [
+        "pruned_edges_are_members",
+        "pruned_excluded_empty",
+        "pruned_good_representative",
+        "pruned_good_row",
+        "pruned_normalized_image",
+        "pruned_row_realization",
+        "pruned_quotient_empty",
+        "pruned_quotient_pairing"
+      ]
+    },
+    {
+      "file": "PrunedBaseModel.lean",
+      "sha256": "a4937433838e366627de31ce6a2413abccb7216b7a18a8599396c6dae34a331a",
+      "theorems": [
+        "eval_prunedUnaryFormula",
+        "eval_prunedBinaryFormula",
+        "pruned_clean_representative",
+        "pruned_quotient_separation",
+        "pruned_quotient_collection",
+        "pruned_quotient_union",
+        "pruned_subset_representative",
+        "pruned_quotient_powerset",
+        "pruned_quotient_infinity",
+        "pruned_quotient_base",
+        "pruned_quotient_replacement"
+      ]
+    },
+    {
+      "file": "GlobalClosedPreservation.lean",
+      "sha256": "b11f55b17f0d0ae576be7e517729512c141f54845f6d6fa8be3d0390a9215766",
+      "theorems": [
+        "defined_least_preserves_closed",
+        "least_global_injective_on_closed",
+        "least_global_reflects_closed_edges",
+        "pruned_transitive_parameter_preserved",
+        "pruned_transitive_parameter_image"
+      ]
+    },
+    {
+      "file": "PrunedTaggedLoops.lean",
+      "sha256": "f53495f6984a4b893711f12ec2450377c5a4d30e5a3ccb09ab0c45c28f2d7b26",
+      "theorems": [
+        "fixed_tagged_loop_exists",
+        "distinct_excluded_labels",
+        "pruned_tagged_loop_row",
+        "pruned_loop_selfSingleton",
+        "pruned_distinct_selfSingletons",
+        "pruned_quotient_not_afa",
+        "afa_source_pruned_not_afa"
+      ]
+    },
+    {
+      "file": "ExcludedLabelFamilies.lean",
+      "sha256": "efe77c59b1a20417965481b4aff504e31fe2075208a91205f27b2b8bcf205727",
+      "theorems": [
+        "eval_excludedLabelFormula",
+        "excluded_label_total",
+        "excluded_label_unique",
+        "excluded_label_injective",
+        "excluded_label_family"
+      ]
+    },
+    {
+      "file": "TaggedGraphSolutions.lean",
+      "sha256": "5d8052e742e1a3a356ec8c95cb16bb1bedebd4158dacc683a09a5e5697767628",
+      "theorems": [
+        "coded_function_value_unique",
+        "eval_copiedTaggedEdgeFormula",
+        "tagged_graph_solution_exists",
+        "tagged_solution_pruning",
+        "pruned_source_graph_realization",
+        "pruned_extensional_source_graph_embedding"
+      ]
+    },
+    {
+      "file": "PrunedGraphPresentation.lean",
+      "sha256": "bd442ded238a61bb11827e8ccfd4ae1499132f56954c53abc91c8de49eaf9c92",
+      "theorems": [
+        "pruned_node_presentation_exists",
+        "pruned_node_class_eq",
+        "pruned_node_correspondence_eq",
+        "pruned_node_correspondence_total",
+        "eval_prunedRelatedFormula",
+        "eval_prunedClassEdgeFormula",
+        "pruned_graph_presentation_edges",
+        "pruned_graph_presentation_extensional",
+        "pruned_target_extensional_graph_lift"
+      ]
+    },
+    {
+      "file": "PrunedCodeTransfer.lean",
+      "sha256": "2e611880902b83b27702366461ab23c7cc7d5f0e06bb6748e365829b03692c65",
+      "theorems": [
+        "pruned_pair_forward",
+        "pruned_orderedPair_forward",
+        "retained_relation_members",
+        "pruned_coded_relation_image",
+        "pruned_function_retained",
+        "pruned_function_forward",
+        "pruned_function_injective"
+      ]
+    },
+    {
+      "file": "PrunedExtensionalRealization.lean",
+      "sha256": "42ccc7c4289551778c98850f1d65fce9ac85c8d2c7883908b4f55e24a32ded02",
+      "theorems": [
+        "eval_prunedClassPullbackFormula",
+        "pruned_class_pullback_function",
+        "pruned_target_extensional_realization",
+        "afa_source_pruned_extensional_realization"
+      ]
+    },
+    {
+      "file": "ClosedMapConservation.lean",
+      "sha256": "68064e3a886a7285919cd31b88cac103cc2773515702fcbec7bd890a2d02abe0",
+      "theorems": [
+        "eval_closedMapKernelFormula",
+        "global_least_conserves_closed_map",
+        "pruned_code_conserves_closed_map"
+      ]
+    },
+    {
+      "file": "PrunedFixedCover.lean",
+      "sha256": "62c2ec67b077a2bba143c00bd9446e7f02d6c3285d858483148e9c6146829a31",
+      "theorems": [
+        "pruned_fixed_cover_exists",
+        "eval_prunedEqualAtFormula",
+        "eval_prunedClassificationFormula",
+        "pruned_classification_exists",
+        "pruned_classification_kernel",
+        "pruned_fixed_classification_rows",
+        "pruned_fixed_cover_classification"
+      ]
+    },
+    {
+      "file": "JointTaggedSolutions.lean",
+      "sha256": "3d40bcfbd5ad7e992ba1d311cd031733ed56ec1d064556f59f58845866de4af1",
+      "theorems": [
+        "boundary_graph_solution_exists",
+        "eval_mixedBoundaryFormula",
+        "mixed_tagged_graph_solution_exists",
+        "mixed_tagged_solution_pruning",
+        "pruned_joint_graph_solution",
+        "pruned_joint_closed_realization"
+      ]
+    },
+    {
+      "file": "JointClassification.lean",
+      "sha256": "471e4d611e5833f46d316b64c6035473d5a51daedc84958f87393afaa4cb98cb",
+      "theorems": [
+        "eval_jointClassificationFormula",
+        "classification_complement_exists",
+        "joint_classification_exists",
+        "joint_classification_rows",
+        "joint_classification_quotient_kernel"
+      ]
+    },
+    {
+      "file": "PrunedJointRealization.lean",
+      "sha256": "c06151f0cad23eae78fe6ca61226ba27b7bbe0e13a933a2032941e1188233660",
+      "theorems": [
+        "pruned_fixed_joint_realization"
+      ]
+    },
+    {
+      "file": "PrunedFixedDecoration.lean",
+      "sha256": "a3ae46a2bb71d8ed71570036d0fb9587579d11d4d319ed2b066c859c71c44884",
+      "theorems": [
+        "pruned_relational_function",
+        "eval_jointPullbackFormula",
+        "pruned_joint_pullback_relation",
+        "pruned_joint_fixed_decoration",
+        "pruned_quotient_bafa",
+        "afa_source_pruned_bafa"
+      ]
+    },
+    {
+      "file": "PrunedModelBridge.lean",
+      "sha256": "33bc02b0a1726643a6e172df90c51bf01ff8e289ae7e7e587280f5e95f01ced7",
+      "theorems": [
+        "solvability_selfSingleton_exists",
+        "fixed_solvability_to_bafa_model_existence",
+        "afa_to_bafa_model_existence",
+        "bafa_afa_model_existence_iff",
+        "pruned_theory_formula_translation",
+        "pruned_bridge_translated_bafa",
+        "pruned_bridge_target_replacement",
+        "pruned_bridge_target_not_afa"
+      ]
+    },
+    {
+      "file": "PrunedCarrierComparison.lean",
+      "sha256": "2c866c447f4bacb741e50c18526064f6d66218a67bb7357abfa9fe9e65ad5d85",
+      "theorems": [
+        "selfSingleton_subset_iff",
+        "retained_pruned_to_full_code",
+        "retained_pruned_to_full_injective",
+        "retained_pruned_to_full_surjective",
+        "retained_pruned_to_full_members",
+        "retained_pruned_formula_semantics"
+      ]
+    },
+    {
+      "file": "PrunedChoiceTransfer.lean",
+      "sha256": "0f680d3cb4d610bc370d80bd5c9fa792da0102d2bc024359375e7a4e7a555b7c",
+      "theorems": [
+        "choice_resolves_total_relation",
+        "eval_prunedChoiceCandidatesFormula",
+        "pruned_choice_candidates",
+        "pruned_quotient_choice"
+      ]
+    },
+    {
+      "file": "PrunedChoiceModelBridge.lean",
+      "sha256": "f03e9722737d1fca75daac3847f3feda9d72f61b570b5c6591913007963a26af",
+      "theorems": [
+        "afa_to_bafa_choice_model_existence",
+        "bafa_afa_choice_model_existence_iff",
+        "pruned_bridge_translated_choice",
+        "retained_pruned_choice"
+      ]
+    },
+    {
+      "file": "CanonicalGraphEvaluation.lean",
+      "sha256": "d5fdf31b1cb3218668a674edbf379ec4581d7f905e949b48fb578ac3bfec1876",
+      "theorems": [
+        "induced_decoration_restriction",
+        "eval_globalDecorationFormula",
+        "defined_decoration_value_exists",
+        "defined_decoration_value_unique",
+        "canonical_graph_value_spec",
+        "canonical_graph_value_iff",
+        "canonical_graph_value_rows",
+        "canonical_graph_value_function",
+        "canonical_graph_value_decoration",
+        "canonical_graph_value_respects_least"
+      ]
+    },
+    {
+      "file": "PrunedEvaluationMap.lean",
+      "sha256": "1ae7b703718dc4a1c4157abac454b24a938fe65c2269551f1aabac51b648b63c",
+      "theorems": [
+        "pruned_evaluation_code",
+        "pruned_evaluation_exact_members",
+        "coded_functions_compose",
+        "pruned_evaluation_surjective",
+        "exact_members_preserves_selfSingleton",
+        "pruned_evaluation_distinct_equal_values"
+      ]
+    },
+    {
+      "file": "PrunedEvaluationKernel.lean",
+      "sha256": "0559b4bd4fb532dc65e978f54f9131bef471bba2c8e493f2d890d5e041b18c9c",
+      "theorems": [
+        "eval_retainedFunctionKernelFormula",
+        "pruned_evaluation_kernel_code",
+        "pruned_equal_evaluation_internal_behavior"
+      ]
+    },
+    {
+      "file": "AfaInternalCoinduction.lean",
+      "sha256": "1aa05532ef283f2bbd7a0dc18afa4816a71bc300ad8316d5fc38f0c7fcd936e8",
+      "theorems": [
+        "afa_transitive_internal_strong_extensional",
+        "afa_internal_behavior_iff_equal"
+      ]
+    },
+    {
+      "file": "PrunedBehaviorEvaluation.lean",
+      "sha256": "358f2b2c87c6fe2fe952c417779425d2a28664fcf524b08bbdd857010057f6cb",
+      "theorems": [
+        "eval_prunedBehaviorImageFormula",
+        "pruned_behavior_image_code",
+        "pruned_internal_behavior_equal_evaluation",
+        "pruned_evaluation_kernel_iff"
+      ]
+    },
+    {
+      "file": "PrunedRoundtrip.lean",
+      "sha256": "70c461e8defa533f5acd5b87a77b5193d7357bb6799fd3c0e5a898a75b6445b0",
+      "theorems": [
+        "pruned_roundtrip_code",
+        "pruned_roundtrip_injective",
+        "pruned_roundtrip_surjective",
+        "pruned_roundtrip_members",
+        "pruned_roundtrip_formula_semantics",
+        "pruned_afa_choice_iff"
+      ]
+    },
+    {
+      "file": "TheoryRetraction.lean",
+      "sha256": "bb315a868b894245c04658447efa239672ff40790d9123989e2c79088e3a1037",
+      "theorems": [
+        "satisfies_behavior_theory",
+        "pruned_roundtrip_sentence",
+        "pruned_satisfies_behavior_theory",
+        "afa_bafa_theory_model_existence",
+        "afa_bafa_semantic_consequence",
+        "afa_bafa_semantic_independence",
+        "afa_to_bafa_no_choice_model_existence",
+        "afa_no_choice_iff_bafa_quotient_no_choice"
+      ]
+    },
+    {
+      "file": "DefinableRetraction.lean",
+      "sha256": "9f647186b28e870eaa84bde3e3e9d41aa131b8e35dfb2db91849674b783e5360",
+      "theorems": [
+        "eval_selfSingletonAtFormula",
+        "eval_bindSelfSingleton",
+        "eval_recoveryFormula",
+        "recovery_formula_value",
+        "recovery_formula_total_unique",
+        "recovery_formula_surjective",
+        "recovery_formula_function_on_set",
+        "parameterized_recovery_translation",
+        "recovery_translation_formula_semantics",
+        "recovery_translation_equal",
+        "recovery_translation_member",
+        "recovery_translation_sentence"
+      ]
+    },
+    {
+      "file": "PartialIsoRelabeling.lean",
+      "sha256": "d0d7b779e627396e18bfc034df839517ed3f3512d33f0706effeea9e9509c7c2",
+      "theorems": [
+        "coded_relation_union",
+        "extend_coded_bijection_domain",
+        "eval_transportedMembershipFormula",
+        "transported_membership_graph"
+      ]
+    },
+    {
+      "file": "BafaPartialHomogeneity.lean",
+      "sha256": "55698e3895616e3db54b747725e560159b0e4ea4de4fbe09a804f85b8eef6c6a",
+      "theorems": [
+        "transported_membership_edge_iff",
+        "partial_iso_extension_graph",
+        "bafa_transitive_iso_extension",
+        "bafa_transitive_iso_forth",
+        "transitive_membership_iso_inverse",
+        "bafa_transitive_iso_back"
+      ]
+    },
+    {
+      "file": "CountableIsoChains.lean",
+      "sha256": "0c270fbffd30f541575aa9c0a3e4257e4e6a517b5b47d2bcb5e769618c803ee7",
+      "theorems": [
+        "partial_iso_extends_refl",
+        "partial_iso_extends_trans",
+        "partial_iso_cover_extension",
+        "partial_iso_next_spec",
+        "enumerated_covering_iso_chain",
+        "covering_chain_mono",
+        "iso_chain_relation_total",
+        "iso_chain_relation_unique",
+        "iso_chain_map_relation",
+        "iso_chain_map_value",
+        "iso_chain_map_injective",
+        "iso_chain_map_surjective",
+        "iso_chain_map_members",
+        "iso_chain_map_local"
+      ]
+    },
+    {
+      "file": "CountableBafaAutomorphisms.lean",
+      "sha256": "21cc0581f805b266090aa581bb72b5c5b96e10191f3f34f01f8306c8b6070608",
+      "theorems": [
+        "countable_bafa_automorphism_extension",
+        "locally_internal_map_restriction",
+        "countable_bafa_elementary_extension",
+        "distinct_quines_partial_swap",
+        "countable_bafa_quine_swap",
+        "countable_bafa_nontrivial_automorphism"
+      ]
+    },
+    {
+      "file": "InvolutionCopies.lean",
+      "sha256": "0b9da1913c51b458b010316be2d1fb7b23db13350c3f0b8b950900e60caa981f",
+      "theorems": [
+        "extend_coded_bijection_avoiding",
+        "coded_bijection_inverse",
+        "coded_bijection_involution_union",
+        "internal_involution_two_copies",
+        "coded_symmetric_function_square"
+      ]
+    },
+    {
+      "file": "InvolutionAmalgamGraph.lean",
+      "sha256": "9508515054900fe78568e1e1affb55dbff8cef9b30810a4ba5c89830c6a6be4a",
+      "theorems": [
+        "involutive_graph_amalgam"
+      ]
+    },
+    {
+      "file": "LeastKernelDecoration.lean",
+      "sha256": "78051a9d3f9d9ec1be796c4c3bb027c627af2245383896738409b7ef054bf3cd",
+      "theorems": [
+        "bafa_fixed_least_decoration"
+      ]
+    },
+    {
+      "file": "LeastDecorationSymmetry.lean",
+      "sha256": "cc5c537f0916d39564ed678265610b0c78d699e9e0de2ea8bc5a6ff0358480d0",
+      "theorems": [
+        "eval_decorationSymmetryImageFormula",
+        "decoration_symmetry_image_code",
+        "least_decoration_involution_descends"
+      ]
+    },
+    {
+      "file": "BafaInvolutionExtension.lean",
+      "sha256": "31d9a3bb3348fb05729b4b24e70adb9392638547512d42d668a668452d4c73c7",
+      "theorems": [
+        "bafa_involution_extension",
+        "bafa_involution_cover_extension"
+      ]
+    },
+    {
+      "file": "CountableBafaInvolutions.lean",
+      "sha256": "1b62b906667f9d05b3e5dc285ced78eaf5059676df5b015ad7583923affc55e5",
+      "theorems": [
+        "internal_involution_step",
+        "enumerated_covering_involution_chain",
+        "iso_chain_map_involution",
+        "countable_bafa_involution_extension",
+        "distinct_quines_internal_involution",
+        "countable_bafa_quine_involution",
+        "countable_bafa_nontrivial_involution"
+      ]
+    },
+    {
+      "file": "DecorationActions.lean",
+      "sha256": "40f2c0346629e464ac0e27ad7b199d5b8a75f2201994aecb052188eb3fc623de",
+      "theorems": [
+        "least_decoration_automorphism_descends"
+      ]
+    },
+    {
+      "file": "DecorationActionLaws.lean",
+      "sha256": "fd5cb14e46007b25facaf5ac10005a0674d71b01f3d5780c74d56e14edc50124",
+      "theorems": [
+        "decoration_image_unique",
+        "decoration_image_identity",
+        "decoration_image_composition",
+        "decoration_image_inverse",
+        "decoration_images_equal_iff",
+        "decoration_image_identity_iff"
+      ]
+    },
+    {
+      "file": "BafaCoherentRealization.lean",
+      "sha256": "4e3f33fd2e295d5f308db6c3341c89931d23b9ba08e2834da33a3fcae487352b",
+      "theorems": [
+        "bafa_fixed_coherent_realization",
+        "fixed_decoration_action_faithful"
+      ]
+    },
+    {
+      "file": "FiniteCodedUnions.lean",
+      "sha256": "351bf6dd613b6bb6a7fb13a61129cfe87a14314ffe5b74d716efa821f01ac99f",
+      "theorems": [
+        "finite_indexed_union",
+        "finite_indexed_relation_union"
+      ]
+    },
+    {
+      "file": "FiniteCopies.lean",
+      "sha256": "4973600f0ce259354be0cd72c98ef43a4921af2c059aaacf2563281e39ed36e1",
+      "theorems": [
+        "copy_with_exact_overlap",
+        "finite_partial_copy_family",
+        "finite_copy_family"
+      ]
+    },
+    {
+      "file": "FiniteCopyGraph.lean",
+      "sha256": "a89b884de5784c65fd4075989a5394d41d020c5e0f5ea39dbe48bbc1f075b8ef",
+      "theorems": [
+        "copied_membership_agrees_on_old",
+        "finite_membership_amalgam"
+      ]
+    },
+    {
+      "file": "FiniteGroupCopies.lean",
+      "sha256": "82edf15be226ff54ba6efa36a6c4fe77026c11331eee5a09cc4e6b52a28fa122",
+      "theorems": [
+        "finite_group_left_inverse",
+        "finite_group_right_inverse",
+        "copy_reflects_old_value",
+        "copy_transition_code",
+        "finite_copy_action_compatible",
+        "finite_copy_action_functions"
+      ]
+    },
+    {
+      "file": "FiniteGroupAmalgam.lean",
+      "sha256": "2d2cacb94f432c3253ce9c61350d1fe1b0c1bb77261dc411dc3e148f909619a7",
+      "theorems": [
+        "finite_group_graph_amalgam"
+      ]
+    },
+    {
+      "file": "BafaFiniteGroupExtension.lean",
+      "sha256": "27cfe5843e62a13887e4af4c4397fcb88ee865471ad49773a344fe3d852270c0",
+      "theorems": [
+        "bafa_finite_group_extension",
+        "bafa_finite_group_cover_extension"
+      ]
+    },
+    {
+      "file": "CountableGroupChains.lean",
+      "sha256": "e8a0aa7c45011456d4b745825887992c431a769f95ab8a23aea072e45447172c",
+      "theorems": [
+        "internal_group_action_step",
+        "enumerated_covering_group_chain",
+        "group_chain_map_identity",
+        "group_chain_map_multiplication"
+      ]
+    },
+    {
+      "file": "CountableBafaGroupActions.lean",
+      "sha256": "0b63f16b82ea90e631b6ca5a506dba71e6a71e849fc2567aa84d4350d1df6748",
+      "theorems": [
+        "countable_bafa_group_extension",
+        "extended_group_action_faithful"
+      ]
+    },
+    {
+      "file": "FiniteQuineLabels.lean",
+      "sha256": "3f0cf5e221168e88b647d61bfc07f462d44188013c9f2c46c7a68c0da96bfe93",
+      "theorems": [
+        "finite_partial_quine_labels",
+        "finite_distinct_quine_set"
+      ]
+    },
+    {
+      "file": "FiniteRegularActions.lean",
+      "sha256": "d45b1d5d61e33cd0762293414b946bd418eace1238099a5c6d1879c1cae62a66",
+      "theorems": [
+        "finite_group_left_cancel",
+        "finite_regular_action_codes",
+        "finite_quine_regular_action",
+        "countable_bafa_faithful_finite_group"
+      ]
+    },
+    {
+      "file": "FiniteCosets.lean",
+      "sha256": "1456b381d8de795db7ecf2856ebbfc9f1d25e101e8f30a03f14995dae2cff821",
+      "theorems": [
+        "coset_action_identity",
+        "coset_action_multiplication",
+        "coset_action_subgroup_base",
+        "coset_representative_spec",
+        "coset_representative_base",
+        "coset_factor_exists",
+        "coset_factor_spec",
+        "coset_factor_unique",
+        "coset_factor_identity",
+        "coset_factor_multiplication",
+        "coset_factor_subgroup_base",
+        "coset_indices_complete"
+      ]
+    },
+    {
+      "file": "InducedGroupFunctions.lean",
+      "sha256": "4479449c30b9958942b392c4a6a4889dd4b9ef9f24c3d7af6b7ce1200622f6bc",
+      "theorems": [
+        "twisted_copy_transition",
+        "induced_action_functions"
+      ]
+    },
+    {
+      "file": "InducedGroupAmalgam.lean",
+      "sha256": "7ea14ec501fffb89928e2564d05a68f442103424a996b046cf795a26be5297f0",
+      "theorems": [
+        "induced_group_graph"
+      ]
+    },
+    {
+      "file": "BafaSubgroupExtension.lean",
+      "sha256": "44845aa00d21bd28794778e4b03d892a7ac0c1ed7b1353f5f50e9adb61c59f73",
+      "theorems": [
+        "bafa_subgroup_action_extension",
+        "bafa_subgroup_cover_extension"
+      ]
+    },
+    {
+      "file": "FiniteGroupExhaustions.lean",
+      "sha256": "6263c8613707b6ccb2bdd5133ea56765557181ee0019c3b8e47b89db761947d6",
+      "theorems": [
+        "exhaustion_stage_lift_exists",
+        "exhaustion_lift_embed",
+        "exhaustion_lift_refl",
+        "exhaustion_lift_comp",
+        "exhaustion_lift_one",
+        "exhaustion_lift_mul"
+      ]
+    },
+    {
+      "file": "GrowingGroupChains.lean",
+      "sha256": "3c6d3a3c09989cb08e2d362226df782917e74d80c73abfa60215adef7e5b9120",
+      "theorems": [
+        "growing_group_covering_chain",
+        "growing_group_domain_mono",
+        "growing_group_action_mono",
+        "growing_action_relation_total",
+        "growing_action_relation_unique",
+        "growing_action_map_relation",
+        "growing_action_map_value"
+      ]
+    },
+    {
+      "file": "GrowingGroupLimits.lean",
+      "sha256": "caad0ab02d0932f59336090cbbf413fd4204c943fcf05973ba38d5045be0a9e9",
+      "theorems": [
+        "growing_action_common_stage",
+        "growing_action_map_injective",
+        "growing_action_map_surjective",
+        "growing_action_map_members",
+        "growing_action_map_local",
+        "growing_action_map_identity",
+        "growing_action_map_multiplication",
+        "countable_bafa_exhausted_group_extension"
+      ]
+    },
+    {
+      "file": "FreshFiniteRegularActions.lean",
+      "sha256": "92063b41b23dc086aee7dea79bce014c60e531950ab9cc94493f94158451270c",
+      "theorems": [
+        "finite_partial_quine_labels_outside",
+        "finite_distinct_quine_set_outside",
+        "finite_quine_regular_action_outside"
+      ]
+    },
+    {
+      "file": "DisjointGroupActions.lean",
+      "sha256": "35022b4e286df4689ad733d7398b84b2b5cd11b6fb390701678f02a95520779a",
+      "theorems": [
+        "disjoint_membership_iso_union",
+        "disjoint_group_action_union"
+      ]
+    },
+    {
+      "file": "FaithfulGroupExtensions.lean",
+      "sha256": "236ef7afa81748bfae3caef23d0f98cc1cf6e80f9802cda5fccee4b4d3a9c34f",
+      "theorems": [
+        "faithful_action_extension_preserves",
+        "bafa_faithful_group_action_extension",
+        "bafa_subgroup_faithful_cover_extension"
+      ]
+    },
+    {
+      "file": "FaithfulGrowingGroupLimits.lean",
+      "sha256": "9f9f85e98087cc0a5add1872985d12656bbb8b336c736621261be7363a40dce0",
+      "theorems": [
+        "faithful_growing_group_covering_chain",
+        "growing_group_limit_faithful",
+        "countable_bafa_faithful_exhausted_group_extension"
+      ]
+    },
+    {
+      "file": "InternalQuinePairs.lean",
+      "sha256": "e8b6ea81215bdffd35c1c37418368c0e4bb0955a4932c2dd0a740eb7541f8a80",
+      "theorems": [
+        "eval_pairImagesFormula",
+        "coded_pair_image_family",
+        "bafa_internal_quine_pairs",
+        "internal_quine_pair_distinct",
+        "internal_quine_pair_rows_disjoint"
+      ]
+    },
+    {
+      "file": "OmegaQuinePairs.lean",
+      "sha256": "d870de3e14118fabbfa482897416b0f8dc3b591bfc7521a47f7c5fd96bcd1ee3",
+      "theorems": [
+        "standard_omega_values_mem",
+        "standard_omega_values_injective",
+        "bafa_omega_quine_pair_family"
+      ]
+    },
+    {
+      "file": "InternalPairChoice.lean",
+      "sha256": "cc0b2ffddbe9ef969c8c417405226907610e18c075e98706cbb9028b2d1b1afc",
+      "theorems": [
+        "eval_pairLeftSelectionFormula",
+        "internal_quine_pairs_have_choice",
+        "internal_quine_pairs_no_supported_swap_system"
+      ]
+    },
+    {
+      "file": "QuineDomainSwaps.lean",
+      "sha256": "c9a29910e7a82fd7d657d831cae6aeafe9aebefc5981cfa093dfdec5bd48e485",
+      "theorems": [
+        "eval_quineSwapFormula",
+        "quine_swap_involutive",
+        "quine_domain_internal_swap",
+        "countable_bafa_quine_domain_swap"
+      ]
+    },
+    {
+      "file": "InternalPairSwaps.lean",
+      "sha256": "4ce8cf27c20c4e261ebd199415e7680948645d6286a7bc947412ad328a8d69ac",
+      "theorems": [
+        "elementary_map_pair",
+        "elementary_map_fixed_members_set",
+        "pair_swap_moves_internal_choice",
+        "countable_bafa_internal_pair_swap"
+      ]
+    },
+    {
+      "file": "HereditarySupport.lean",
+      "sha256": "c457517852486730885aa6517702cc6bfa2281046c9190004a8edc407b111e6e",
+      "theorems": [
+        "hereditary_support_root",
+        "hereditary_support_member",
+        "hereditary_support_intro",
+        "hereditary_support_quine",
+        "supported_carrier_extensional",
+        "hereditary_support_empty",
+        "hereditary_support_pair",
+        "elementary_map_union_set",
+        "hereditary_support_union",
+        "supported_carrier_empty",
+        "supported_carrier_pairing",
+        "supported_carrier_union"
+      ]
+    },
+    {
+      "file": "SupportedCoding.lean",
+      "sha256": "4f4038149b993d2127e3454f85827b60b93fe2bc2deba352df10f77a0ab0a1b1",
+      "theorems": [
+        "supported_pair_iff",
+        "supported_ordered_pair_iff",
+        "supported_coded_relation_iff",
+        "supported_relation_components",
+        "supported_choice_function_ambient",
+        "supported_carrier_choice_obstruction"
+      ]
+    },
+    {
+      "file": "SupportedPairCandidate.lean",
+      "sha256": "f9b751658cd5b496ab97e74431a96de430905c75b3c43cb6c19d5b5a36b527d5",
+      "theorems": [
+        "internal_pair_family_disjoint",
+        "internal_pair_swap_at",
+        "bafa_internal_pair_swap_sequence",
+        "pair_sequence_labels_eventually_fixed",
+        "pair_sequence_family_hereditarily_supported",
+        "pair_sequence_supported_carrier_not_choice",
+        "countable_bafa_supported_pair_candidate"
+      ]
+    },
+    {
+      "file": "SupportedInfinity.lean",
+      "sha256": "f65abd242d6aeedec6c3ca890be63517e649bb327f498539454f8e22b686e0ef",
+      "theorems": [
+        "descendant_in_transitive",
+        "hereditary_support_internally_wellFounded",
+        "supported_carrier_infinity",
+        "countable_bafa_supported_infinite_candidate"
+      ]
+    },
+    {
+      "file": "BoundedSyntax.lean",
+      "sha256": "a793c0644e1580a1f731ae83e168fd4daf4ae1c2cd2e90e0e8d514ce5a70146d",
+      "theorems": [
+        "bounded_eval_toFormula",
+        "supported_cons_values",
+        "supported_bounded_absoluteness"
+      ]
+    },
+    {
+      "file": "SupportedSeparation.lean",
+      "sha256": "ec72f71f535dc86e542e473984c0a70807230e3eb8285dcc1f4ec190fd5159c6",
+      "theorems": [
+        "eventually_fixed_finite_parameters",
+        "elementary_map_separation_set",
+        "hereditary_support_source_separation",
+        "supported_carrier_bounded_separation",
+        "countable_bafa_supported_bounded_candidate"
+      ]
+    },
+    {
+      "file": "SupportedPowerObstruction.lean",
+      "sha256": "92d859a6138c47e653d781ebd60d237880764aa4e0027a25a378b60cfd27f947",
+      "theorems": [
+        "pair_sequence_moves_choice_range",
+        "pair_sequence_choice_range_excluded",
+        "pair_sequence_ambient_powerset_excluded",
+        "bafa_pair_sequence_with_ambient_choice",
+        "countable_bafa_supported_candidate_power_obstruction"
+      ]
+    },
+    {
+      "file": "RelativeInducedFunctions.lean",
+      "sha256": "8a7194d49194e0b1e5308747d784dc91ee71c0eac9fb9899e9bf159294aef382",
+      "theorems": [
+        "compatible_subgroup_action_restriction",
+        "relative_induced_transition_on_core",
+        "relative_induced_action_functions"
+      ]
+    },
+    {
+      "file": "RelativeInducedGraph.lean",
+      "sha256": "993e6609fb1107b078f0a2bfcac3622b286f1421c5e2b7824463ffe51bec6319",
+      "theorems": [
+        "relative_induced_group_graph"
+      ]
+    },
+    {
+      "file": "BafaRelativeGroupExtension.lean",
+      "sha256": "4a6d802009389da7400ae0e89364aceba25d9114a1c5da9d314575619752f9f7",
+      "theorems": [
+        "bafa_relative_subgroup_extension",
+        "bafa_relative_subgroup_cover_extension"
+      ]
+    },
+    {
+      "file": "ControlledGroupChains.lean",
+      "sha256": "8c7a32a3cd9da08e6afa5927c1e30975ba8cf8a738df61dd18a3c0725e61f44e",
+      "theorems": [
+        "fixed_core_step_compatible",
+        "controlled_group_cover_step",
+        "controlled_growing_group_chain"
+      ]
+    },
+    {
+      "file": "ControlledGroupLimits.lean",
+      "sha256": "a5dda8ffad59d7ec49035dbe6bdee84482dac78b2deba036b272d7c0abe7b86e",
+      "theorems": [
+        "countable_bafa_controlled_group_extension",
+        "group_action_preserves_commutation"
+      ]
+    },
+    {
+      "file": "FiniteBitGroups.lean",
+      "sha256": "e1f02d771607d92ef7539c5ddde38482ea17c4ef62aedfe4354563004623de7c",
+      "theorems": [
+        "bit_vectors_complete",
+        "prefix_bit_mask_value",
+        "prefix_bit_mask_restrict",
+        "finite_bit_mask_commutative",
+        "single_bit_mask_injective"
+      ]
+    },
+    {
+      "file": "FiniteInvolutionActions.lean",
+      "sha256": "02daf72bd54d1cdd35c1efb77b1d53a1598efe9eecc0193c2ff1ac29426375df",
+      "theorems": [
+        "finite_involution_action_identity",
+        "finite_involution_action_commutes",
+        "finite_involution_action_multiplication",
+        "finite_involution_action_involutive",
+        "finite_involution_action_fixed",
+        "finite_involution_action_mem",
+        "finite_involution_action_last_bit",
+        "prefix_last_bit_mask",
+        "finite_involution_action_prefix_step"
+      ]
+    },
+    {
+      "file": "CodedBitActions.lean",
+      "sha256": "d670002b1feed0e81720b9e06bb5f328224195585832faaf538ccf581d75c532",
+      "theorems": [
+        "finite_involution_action_codes",
+        "finite_quine_bit_action",
+        "coded_bit_core_actions"
+      ]
+    },
+    {
+      "file": "PairBitCore.lean",
+      "sha256": "7ea01d666fb75cc7aaec44b6ba11f9c0333b7f6c71aca4f047ab9e36cadbd62a",
+      "theorems": [
+        "disjoint_quine_swaps_commute",
+        "pair_local_flips_commute",
+        "pair_local_flip_mem",
+        "pair_family_bit_core"
+      ]
+    },
+    {
+      "file": "GlobalPairBitActions.lean",
+      "sha256": "11dc401eda5ba796c78034b41c5c430c47a15bdb24d01bcbaf5721d6f4aa63c0",
+      "theorems": [
+        "pair_family_global_bit_action",
+        "bit_action_generator_involutive",
+        "controlled_pair_swap_at",
+        "pair_sequence_commuting_extension",
+        "countable_bafa_commuting_pair_sequence"
+      ]
+    },
+    {
+      "file": "SupportedInvariance.lean",
+      "sha256": "daabb17a2ba1be25633b9d124e4d2a0d08531c51cff7b786d01b8d986a6224ed",
+      "theorems": [
+        "member_descendant_map",
+        "hereditary_support_commuting_involution",
+        "pair_sequence_support_invariant",
+        "restricted_pair_swap_involutive",
+        "restricted_pair_swap_elementary",
+        "restricted_pair_swaps_commute",
+        "restricted_pair_swaps_eventually_fixed",
+        "countable_bafa_invariant_supported_candidate"
+      ]
+    },
+    {
+      "file": "SupportedTraces.lean",
+      "sha256": "e5e6d7b7037a369ebcd2f4ef4e2691ba9c0d9d58a509614b5f49599e04f63aac",
+      "theorems": [
+        "supported_trace_unique",
+        "supported_lift_invariant",
+        "supported_trace_hereditary",
+        "supported_trace_member"
+      ]
+    },
+    {
+      "file": "SupportedFullSeparation.lean",
+      "sha256": "e3478b69db9ae99c664e5858f81c6c5f78f2476726fc595e533fba62afbda1c4",
+      "theorems": [
+        "supported_formula_subset_eventually_invariant",
+        "supported_full_separation_of_traces",
+        "supported_full_separation_iff_traces"
+      ]
+    },
+    {
+      "file": "SupportedRelativePower.lean",
+      "sha256": "7651cfb367aa0ae3c2a790275102c32516b2ebd90348bf937bf0fccbafaf2bc2",
+      "theorems": [
+        "supported_subset_iff",
+        "supported_subsets_eventually_invariant",
+        "supported_power_trace_hereditary",
+        "supported_power_iff_traces",
+        "supported_power_of_bounded_amenability"
+      ]
+    },
+    {
+      "file": "SupportedTruthGap.lean",
+      "sha256": "51b7ee66ce57ac6da9dbdccb5c173b19be75f471c0b55a054dad3a00f52563b1",
+      "theorems": [
+        "eval_hasSelectorFormula",
+        "pair_sequence_no_supported_selector",
+        "pair_sequence_selector_truth_gap",
+        "pair_sequence_inclusion_not_elementary",
+        "countable_bafa_supported_truth_and_trace_criteria"
+      ]
+    },
+    {
+      "file": "UniformHereditarySupport.lean",
+      "sha256": "ea500bf14b55566df1a80b25be664a1931430b6c71db04f32c6cd1abd1295055",
+      "theorems": [
+        "uniform_support_root",
+        "uniform_support_member",
+        "uniform_support_hereditary",
+        "uniform_support_mono",
+        "uniform_support_intro",
+        "uniform_support_of_members",
+        "uniform_support_subset",
+        "uniform_support_pair",
+        "uniform_support_union",
+        "uniform_support_powerset",
+        "uniform_support_internally_wellFounded"
+      ]
+    },
+    {
+      "file": "UniformSupportedPowers.lean",
+      "sha256": "b18ea4f33a739f71e4e0fdb704f7da59f879196211249347c227ffc512d0dc3c",
+      "theorems": [
+        "supported_uniform_ambient_powerset",
+        "ambient_power_tower_step",
+        "ambient_power_tower_uniform",
+        "supported_internal_omega_power_tower"
+      ]
+    },
+    {
+      "file": "UniformSupportedChoice.lean",
+      "sha256": "03840fec0e8e1ad0bf33a1e4510e4f3c2adea55239516c11baca1bc73f3f0143",
+      "theorems": [
+        "uniform_support_ordered_pair",
+        "uniform_support_choice_function",
+        "ambient_choice_function_supported",
+        "supported_uniform_selector_iff",
+        "supported_uniform_family_choice",
+        "pair_sequence_family_not_uniform",
+        "countable_bafa_supported_powers_and_unbounded_support"
+      ]
+    },
+    {
+      "file": "SupportedFixedRowsPowers.lean",
+      "sha256": "7d026d980f883946b3c73d91b0b4ee3426a43faef5b02a0c6d0907ff04531d68",
+      "theorems": [
+        "supported_subset_of_fixed_members",
+        "supported_powerset_of_fixed_members",
+        "supported_fixed_members_power_tower",
+        "pair_sequence_family_power_tower",
+        "countable_bafa_supported_power_contrast"
+      ]
+    },
+    {
+      "file": "StandardOmegaCut.lean",
+      "sha256": "6612fdd70c3973d5ced2a51966e814849ee6ffe27e4e986211e1d817a460457e",
+      "theorems": [
+        "standard_omega_members",
+        "internal_omega_zero_or_contains_zero",
+        "internal_omega_no_successor_gap",
+        "nonstandard_omega_contains_all_standard",
+        "standard_omega_cut_not_internal"
+      ]
+    },
+    {
+      "file": "IndexedOmegaSwaps.lean",
+      "sha256": "a4ae736f9abcfdb0f2028e359803c461bbc28ac03a78d3699352c9ac7b52f40c",
+      "theorems": [
+        "indexed_pair_swap_at",
+        "countable_bafa_omega_indexed_swaps"
+      ]
+    },
+    {
+      "file": "IndexedSelectorPrefixes.lean",
+      "sha256": "000c14db38c805fc02f8e09b95493b95485b31f325f2570cf18bd84e74e5f4f4",
+      "theorems": [
+        "internal_left_label_row",
+        "indexed_left_label_fixed",
+        "indexed_standard_prefix_supported",
+        "indexed_prefix_moved",
+        "indexed_prefix_supported_iff_standard",
+        "left_prefix_subset_union"
+      ]
+    },
+    {
+      "file": "NonstandardSupportedPowerFailure.lean",
+      "sha256": "4176f0b967fd7a5d42705b6267867dfb3841cc922592f1881d8e0daaab6b78e7",
+      "theorems": [
+        "indexed_power_trace_defines_standard_cut",
+        "indexed_nonstandard_no_relative_power_trace",
+        "indexed_nonstandard_supported_not_powerset",
+        "indexed_supported_powerset_requires_standard_omega",
+        "countable_bafa_nonstandard_supported_power_failure"
+      ]
+    },
+    {
+      "file": "InternalTailSupport.lean",
+      "sha256": "a85c0a3a31b8b3ae76ba2e39bac5724ad3ceccded2f86c17e38d420c7759b18b",
+      "theorems": [
+        "eval_rowTailBalancedFormula",
+        "eval_internallyBoundedRowSupportFormula",
+        "quine_swap_membership_invariant_iff",
+        "internally_supported_subsets_exist",
+        "internal_left_prefix_row_supported"
+      ]
+    },
+    {
+      "file": "InternalTailChoice.lean",
+      "sha256": "022aacf6aa2a8cf1adc74531025a67d0dd5b8e41f85d620551ae13f1fb880153",
+      "theorems": [
+        "choice_range_row_unique",
+        "choice_range_row_unbalanced",
+        "internal_tail_excludes_choice_range",
+        "internal_tail_full_left_range_excluded"
+      ]
+    },
+    {
+      "file": "InternalRowSwapFamily.lean",
+      "sha256": "a741643ec3461fd9a94d3775344034a9500b0c840d95c79c7be37b7126d8858e",
+      "theorems": [
+        "eval_swapGraphFormula",
+        "eval_rowSwapCodeFormula",
+        "internal_row_swap_exists",
+        "internal_row_swap_unique",
+        "internal_row_swap_family_code"
+      ]
+    },
+    {
+      "file": "InternalTailLocalSystem.lean",
+      "sha256": "fe02bcd9a81189a98cc046c67a16264dd63bb59776e4b2b65a93f5d5be659936",
+      "theorems": [
+        "row_swap_code_involutive",
+        "internal_pair_flips_commute",
+        "row_swap_code_preserves_set_iff",
+        "internal_tail_iff_coded_swap_invariance",
+        "bafa_internal_tail_local_system",
+        "internal_tail_retains_nonstandard_prefix_excluded_by_old_support"
+      ]
+    },
+    {
+      "file": "BooleanGroupExhaustion.lean",
+      "sha256": "d5de5d88f9bd919e5f5c40498d64ff1f7f74745a8deb15103fdcea5757711db5",
+      "theorems": [
+        "boolean_span_one",
+        "boolean_repeated_factor",
+        "boolean_span_mul"
+      ]
+    },
+    {
+      "file": "InternalMaskGroup.lean",
+      "sha256": "c927df3af3a210fa067c4063f32c53c37cf4369ae5ee37b0f4d407a52c16eab7",
+      "theorems": [
+        "internal_mask_ext",
+        "internal_mask_one_mem",
+        "internal_mask_xor_exists",
+        "internal_mask_mul_mem",
+        "internal_mask_mul_comm",
+        "internal_mask_mul_self",
+        "internal_mask_enumeration_onto"
+      ]
+    },
+    {
+      "file": "MaskedLabelActions.lean",
+      "sha256": "9e09833facdbbf060a08de512665016676dd87fbd81527499b20754ad2ddf073",
+      "theorems": [
+        "label_coordinates_unique",
+        "masked_label_action_value",
+        "masked_label_action_left",
+        "masked_label_action_right",
+        "masked_label_action_mem",
+        "masked_label_action_one",
+        "masked_label_action_mul",
+        "masked_label_action_involutive"
+      ]
+    },
+    {
+      "file": "MaskedActionCodes.lean",
+      "sha256": "2ac8e39db98f4345694393822e08871ac8d5b2bf78a3cf482538fe38be71d7a5",
+      "theorems": [
+        "eval_maskedLabelFormula",
+        "masked_label_action_code"
+      ]
+    },
+    {
+      "file": "MaskedCoreActions.lean",
+      "sha256": "80697248bb05d35abd912f4d2ee9a4e947629d1c0818a03ced6902476d1b9074",
+      "theorems": [
+        "finite_mask_core_action",
+        "internal_mask_fixed_core_actions"
+      ]
+    },
+    {
+      "file": "GlobalInternalMaskActions.lean",
+      "sha256": "8d5281537239eb5a78a166c635e9285e729a163d33c90820325be6b8811e88d9",
+      "theorems": [
+        "countable_bafa_internal_mask_action",
+        "global_mask_action_fixes_family",
+        "global_nonempty_mask_moves_choice",
+        "internal_singleton_mask_exists",
+        "global_internal_prefix_mask_supported",
+        "global_selector_not_mask_supported"
+      ]
+    },
+    {
+      "file": "InternalMaskBounds.lean",
+      "sha256": "c911c38e0ee3f85348df012e71c2e93652e2c89ed0b24c69fa894296af43402f",
+      "theorems": [
+        "internal_omega_member_trichotomy",
+        "internal_omega_common_bound",
+        "mask_support_common_bound"
+      ]
+    },
+    {
+      "file": "HereditaryMaskSupport.lean",
+      "sha256": "d4bf3a983120b3cff324b4d96a63d53f30d3ec7a16000b2d0d63678de174ed19",
+      "theorems": [
+        "hereditary_mask_root",
+        "hereditary_mask_member",
+        "hereditary_mask_intro",
+        "hereditary_mask_quine",
+        "mask_support_invariant",
+        "hereditary_mask_invariant",
+        "mask_carrier_extensional",
+        "hereditary_mask_empty",
+        "hereditary_mask_pair",
+        "hereditary_mask_union",
+        "mask_carrier_empty",
+        "mask_carrier_pairing",
+        "mask_carrier_union",
+        "mask_carrier_subset_iff"
+      ]
+    },
+    {
+      "file": "MaskSupportedLabels.lean",
+      "sha256": "0e0e1cae1b34c654ad419060057790fd854eba36c6f38253bbad927e53f7e635",
+      "theorems": [
+        "hereditary_mask_label",
+        "hereditary_mask_family",
+        "mask_label_subset_hereditary_iff",
+        "elementary_involution_closed_set",
+        "mask_label_subset_support_iff",
+        "mask_label_subset_exact_formula"
+      ]
+    },
+    {
+      "file": "MaskRelativePower.lean",
+      "sha256": "56bf6eb4f2b68b9ff19c188f841ddfa08f98453d5d8465f0bbada1eb8046931d",
+      "theorems": [
+        "elementary_map_subset",
+        "mask_power_trace_hereditary",
+        "mask_carrier_power_iff_traces",
+        "mask_label_domain_relative_power"
+      ]
+    },
+    {
+      "file": "MaskCarrierSchemes.lean",
+      "sha256": "a813d87b9073c544e37913ba895f0be47128365dbfbe657fef6cc087f65dccb3",
+      "theorems": [
+        "mask_cons_values",
+        "mask_bounded_absoluteness",
+        "mask_fixed_finite_parameters",
+        "hereditary_mask_source_separation",
+        "mask_carrier_bounded_separation",
+        "hereditary_mask_internally_wellFounded",
+        "mask_carrier_infinity"
+      ]
+    },
+    {
+      "file": "MaskChoiceCandidate.lean",
+      "sha256": "f0fd28b97a5c41e3c4261f2cd978b8e2a97b7dd38cae87e8c7cf99a91d208acb",
+      "theorems": [
+        "mask_pair_iff",
+        "mask_ordered_pair_iff",
+        "mask_coded_relation_iff",
+        "mask_relation_components",
+        "mask_choice_function_ambient",
+        "mask_carrier_not_choice",
+        "countable_bafa_mask_supported_candidate"
+      ]
+    },
+    {
+      "file": "JointFunctionCodes.lean",
+      "sha256": "51c43613a69e4e57c01efa7905e8f81874c11860e1cf9afdb4b37ff0d8a885db",
+      "theorems": [
+        "definable_function_code",
+        "eval_definedFunctionGraphFormula",
+        "defined_function_graph_unique"
+      ]
+    },
+    {
+      "file": "JointMaskDomains.lean",
+      "sha256": "90e336a9867e2ee230583b63201fbe49376ed1d19a5a44534906ac673bcd7f71",
+      "theorems": [
+        "eval_maskGraphFamilyFormula",
+        "internal_mask_label_family_code",
+        "joint_mask_label_domain",
+        "joint_mask_graph_exists"
+      ]
+    },
+    {
+      "file": "JointMaskPowers.lean",
+      "sha256": "76cb91ac863e67f6f25dceb4c7256a0ac0c22bbe7421b80108f3dac625bccd3d",
+      "theorems": [
+        "joint_mask_domain_fixed",
+        "elementary_coded_image",
+        "eval_powerMaskValueFormula",
+        "joint_mask_power_value",
+        "eval_powerMaskGraphFormula",
+        "joint_mask_domain_powerset"
+      ]
+    },
+    {
+      "file": "JointMaskRelativePower.lean",
+      "sha256": "3c479c24d9c4fdfa5ef70601deeeec84191aa9f05cd98bdacf7666bbbc7d3b90",
+      "theorems": [
+        "eval_jointTailSupportFormula",
+        "joint_tail_support_iff",
+        "joint_mask_power_trace_exists",
+        "joint_mask_relative_power",
+        "mask_carrier_power_of_joint_covers"
+      ]
+    },
+    {
+      "file": "JointMaskPowerTowers.lean",
+      "sha256": "cba06e412184cdfa8dc483c90412057e1319680cfffc52e5307e05d67de838ed",
+      "theorems": [
+        "joint_mask_domain_power_tower",
+        "mask_power_stage_successor",
+        "mask_power_stage_sequence",
+        "countable_bafa_joint_power_candidate"
+      ]
+    },
+    {
+      "file": "IndexedFunctionFamilies.lean",
+      "sha256": "b874d2d4464e3b0858e0523ced9393984ccf5c264637f0c9830dffb40b7f85d1",
+      "theorems": [
+        "eval_indexedFunctionGraphFormula",
+        "definable_function_family"
+      ]
+    },
+    {
+      "file": "InternalCopyValues.lean",
+      "sha256": "8e4b77e9e8207c7f1be4d0c3fa9fa9b49362f9a68e860cea3c6359f62341eb7e",
+      "theorems": [
+        "eval_internalCopyValueFormula",
+        "internal_copy_value_identity",
+        "internal_copy_value_total_unique",
+        "internal_copy_value_old",
+        "internal_copy_old_range",
+        "internal_copy_fresh_value",
+        "internal_copy_value_injective",
+        "internal_copy_distinct_overlap"
+      ]
+    },
+    {
+      "file": "InternalCopyFamilies.lean",
+      "sha256": "4bc46c4baff853217d02f636d33974441a55998c8e4f3cb1d7f815ef5092160b",
+      "theorems": [
+        "eval_copyRangeFamilyFormula",
+        "coded_family_ranges",
+        "internal_copy_family_exists"
+      ]
+    },
+    {
+      "file": "JointMaskCopyFamilies.lean",
+      "sha256": "c7a94dbbfd919658d7399c34fd1a6753d2246ad2a5954eaf5bbe4b331ea3a30a",
+      "theorems": [
+        "joint_mask_internal_iso_family",
+        "joint_mask_copy_family_over_any_set"
+      ]
+    },
+    {
+      "file": "InternalCopyAmalgam.lean",
+      "sha256": "c77ecf486fd43f19032341cc5cacf221e877ec293b791da4d876dbb57007dc2c",
+      "theorems": [
+        "coded_family_union",
+        "eval_internalCopyEdgeFormula",
+        "internal_membership_amalgam"
+      ]
+    },
+    {
+      "file": "JointMaskAmalgams.lean",
+      "sha256": "4a5430d5824595d6b867ef8f91bcceca836eb17b945422aa5d1255d6d5eaaa5a",
+      "theorems": [
+        "joint_mask_membership_amalgam_cover",
+        "internal_label_domain_transitive",
+        "countable_bafa_internal_mask_amalgams"
+      ]
+    },
+    {
+      "file": "GeneralCopyActions.lean",
+      "sha256": "f9c5607a504531cbbb5e774248a936d46ec78a0a7a0c4ba207804f2e6a8d883e",
+      "theorems": [
+        "external_group_left_inverse",
+        "external_group_right_inverse",
+        "general_copy_action_compatible",
+        "general_copy_action_total_unique",
+        "general_copy_graph_action"
+      ]
+    },
+    {
+      "file": "MaskCopyTransitionSyntax.lean",
+      "sha256": "4e52ff2487a368aa1a77f5466fe2e1ab8168cd0d23996ecd3107293abdc7a9b5",
+      "theorems": [
+        "eval_maskXorFormula",
+        "mask_xor_iff_mul",
+        "eval_maskCopyTransitionFormula",
+        "mask_copy_transition_iff"
+      ]
+    },
+    {
+      "file": "CodedMaskActions.lean",
+      "sha256": "6db2e70daad5d6ab99dbe470aa2c0a9ff3722ecffbc352f1dfae042c39585f53",
+      "theorems": [
+        "joint_mask_coded_action"
+      ]
+    },
+    {
+      "file": "JointMaskGraphActions.lean",
+      "sha256": "5451b3dcc69396a5888fe26d56c66bea81155e93e3b1db3545bae68276c129fe",
+      "theorems": [
+        "coded_mask_graph_amalgam"
+      ]
+    },
+    {
+      "file": "JointDecorationFamilies.lean",
+      "sha256": "5d5481e1beda2cfbd6ac16a8800352768759a72b3e33fb21c345873f7432d035",
+      "theorems": [
+        "eval_jointDecorationValueFormula",
+        "joint_decoration_image_family"
+      ]
+    },
+    {
+      "file": "BafaCodedMaskExtension.lean",
+      "sha256": "5bda70c73c2257642533d73419ba956d0337900975038209db18de124fdfdd9f",
+      "theorems": [
+        "bafa_coded_mask_extension",
+        "bafa_coded_mask_cover_extension",
+        "countable_bafa_joint_mask_extensions"
+      ]
+    },
+    {
+      "file": "CodedMaskChains.lean",
+      "sha256": "b3039e5e7bf4bf0d304499fbc67a9312bff3154d86d98d172320023dade4c9b7",
+      "theorems": [
+        "enumerated_coded_mask_chain",
+        "coded_mask_chain_identity",
+        "coded_mask_chain_multiplication",
+        "coded_mask_chain_joint_domain",
+        "coded_mask_chain_joint_covers"
+      ]
+    },
+    {
+      "file": "GloballyJointMaskActions.lean",
+      "sha256": "eea185d61f80467bdc23d8df0859c77f4ebea271ecdc92308ffe817a16e32bb8",
+      "theorems": [
+        "countable_bafa_coded_mask_extension",
+        "countable_bafa_globally_joint_mask_action",
+        "countable_bafa_mask_powerset_candidate"
+      ]
+    },
+    {
+      "file": "PowerBoundedSyntax.lean",
+      "sha256": "74eb727d961eddeeb764f0a26218fc803d7f2b1d5f56c2b95a89f8e497cf8560",
+      "theorems": [
+        "eval_powerSubsetFormula",
+        "power_bounded_eval_toFormula"
+      ]
+    },
+    {
+      "file": "PowerQuantifierBounds.lean",
+      "sha256": "785c268d2b684bc5a4e2e88585afd2483b53199f19f60156bd7b19ce21ad5e68",
+      "theorems": [
+        "power_control_bound_mono",
+        "power_control_depth_mono",
+        "power_quantifier_step_bound",
+        "power_quantifier_control_exists",
+        "power_finite_environment_bound"
+      ]
+    },
+    {
+      "file": "PowerBoundedReduction.lean",
+      "sha256": "20df80b151bdba88cc571b91d156477559f1fb51386a1a5ea9c33e5072e6d2ca",
+      "theorems": [
+        "bounded_eval_subset",
+        "power_bound_lift_env",
+        "power_control_cons",
+        "power_bounded_restrict_correct"
+      ]
+    },
+    {
+      "file": "PowerBoundedSeparation.lean",
+      "sha256": "3eb8c91c4b55600b547903df23cae8573d35d46ba85c72b71f670c57122a17c6",
+      "theorems": [
+        "power_separation_env",
+        "power_bounded_separation_of_bounded"
+      ]
+    },
+    {
+      "file": "MaskPowerBoundedCandidate.lean",
+      "sha256": "50683d63ae1522d48e06e4ac7f74bc760a14073ddc374c125735a4b7ea4aca2b",
+      "theorems": [
+        "mask_carrier_power_bounded_separation",
+        "countable_bafa_mask_power_bounded_candidate"
+      ]
+    },
+    {
+      "file": "MemberGraphAttachments.lean",
+      "sha256": "e831eee9d75a71af5c61a496f91b050089527fe7faf85de15ef2cd7f4a0771c6",
+      "theorems": [
+        "eval_transportedRelationFormula",
+        "transported_relation_graph",
+        "member_graph_attachment_exists",
+        "attachment_closed_extensional"
+      ]
+    },
+    {
+      "file": "AttachmentActionCodes.lean",
+      "sha256": "c167fb9596e51ef1c32cc101c4a8442e763da17a8ca1a31706f5365cf11fa7ec",
+      "theorems": [
+        "eval_attachmentActionFormula",
+        "attachment_action_old",
+        "attachment_action_copy",
+        "attachment_action_function"
+      ]
+    },
+    {
+      "file": "AttachmentGroupActions.lean",
+      "sha256": "91c5ebe6a8a6575ee916b5dd747f8264db345f2fd56bd8beb9028f37eeff5aac",
+      "theorems": [
+        "coded_group_graph_isomorphisms",
+        "attachment_group_action"
+      ]
+    },
+    {
+      "file": "BafaEquivariantAttachments.lean",
+      "sha256": "891a656de6f85e671fefa9efcb3b7c9f45fb0f00c6463a46e1a7495966b95a4c",
+      "theorems": [
+        "attachment_decoration_pullback",
+        "bafa_equivariant_graph_attachment"
+      ]
+    },
+    {
+      "file": "JointAttachmentFamilies.lean",
+      "sha256": "75806a447cbcfd9c26fe9975029a0a1a86a0849d8de9a28a0c0e15ec97c07adf",
+      "theorems": [
+        "joint_attachment_env",
+        "eval_jointAttachmentValueFormula",
+        "joint_attachment_action_family"
+      ]
+    },
+    {
+      "file": "JointBafaAttachments.lean",
+      "sha256": "2a4997cd030ed6954cfbc4df4d4255a0b4c86f4487a74e1033d38caa89c5a42b",
+      "theorems": [
+        "bafa_joint_graph_attachment"
+      ]
+    },
+    {
+      "file": "FixedGraphAttachments.lean",
+      "sha256": "dba4451b4c6d3edae40764f3e6f9ec1da2c7cab983408ce3a7dae1a2e95f96bd",
+      "theorems": [
+        "trivial_coded_mask_graph_action",
+        "bafa_fixed_graph_attachment",
+        "decoration_descendant_range",
+        "fixed_decoration_values_hereditary",
+        "countable_bafa_fixed_graph_action"
+      ]
+    },
+    {
+      "file": "GraphEnrichedMaskCandidate.lean",
+      "sha256": "98c8c38f4c3052bee88171c01e6fac19e505116809a46d8fb8b52baba1063e46",
+      "theorems": [
+        "countable_bafa_graph_enriched_candidate"
+      ]
+    },
+    {
+      "file": "MaskEquivariantFunctions.lean",
+      "sha256": "3c1e7694e1d04aec34dc2599608df34bc3aca0f326f3c062668c9c9923d8e6ca",
+      "theorems": [
+        "elementary_map_ordered_pair",
+        "equivariant_relation_fixed",
+        "equivariant_function_fixed",
+        "hereditary_mask_ordered_pair",
+        "mask_equivariant_function_supported",
+        "mask_equivariant_value_supported",
+        "mask_equivariant_decoration_hereditary"
+      ]
+    },
+    {
+      "file": "MaskGraphAbsoluteness.lean",
+      "sha256": "6b8900bb2b0d9336fe7095e46a05df1b8ba26d37c40f416a736fdcca68b2f60f",
+      "theorems": [
+        "mask_function_iff",
+        "mask_graph_iff",
+        "mask_graph_extensional_iff",
+        "mask_injective_iff",
+        "mask_decoration_iff",
+        "mask_transitive_iff",
+        "mask_range_iff",
+        "hereditary_mask_function_range",
+        "mask_realization_transitive_range"
+      ]
+    },
+    {
+      "file": "InvariantGraphAttachments.lean",
+      "sha256": "f1744d9fc0529bb382811d9a37064d0108deeca409221c32b4d7add1c7f0104f",
+      "theorems": [
+        "countable_bafa_invariant_graph_attachment",
+        "invariant_core_graph_hereditary_realization"
+      ]
+    },
+    {
+      "file": "MaskPartnerGraphs.lean",
+      "sha256": "e682e4f8578ea23c3079c3750e4a58bb22ebc2ca7cc653ab3d0185b3f68d400c",
+      "theorems": [
+        "masked_label_actions_commute",
+        "mask_partner_graph_exists",
+        "partner_graph_rows",
+        "partner_decoration_two_cycles"
+      ]
+    },
+    {
+      "file": "MaskTwoCycleCandidate.lean",
+      "sha256": "25b9ef048f506137903bf80c36b0f9fbeab2b9c38f36e5e95945832481684475",
+      "theorems": [
+        "mask_two_cycle_iff",
+        "countable_bafa_internal_two_cycle_candidate"
+      ]
+    },
+    {
+      "file": "JointMaskRestrictions.lean",
+      "sha256": "7a330700119d34619e0aab6fb84f80059249d0d45e3a3f80ab7546169fd97f2e",
+      "theorems": [
+        "eval_jointMaskPointFormula",
+        "joint_mask_point_value",
+        "joint_mask_domain_restrict",
+        "joint_mask_orbit_exists"
+      ]
+    },
+    {
+      "file": "OrbitGraphParameters.lean",
+      "sha256": "0044cad83d61883676b43d2a4c60e6220e34bcc8a62dd4f8553f862bd6a3cde7",
+      "theorems": [
+        "eval_orbitGraphParametersFormula",
+        "orbit_graph_parameters_exists",
+        "orbit_graph_parameters_unique",
+        "elementary_map_graph_parameters",
+        "ordered_pair_components_in_transitive",
+        "orbit_graph_parameters_in_transitive",
+        "eval_bafaRequestFormula",
+        "elementary_map_bafa_request",
+        "bafa_request_parameters"
+      ]
+    },
+    {
+      "file": "OrbitDiagramCodes.lean",
+      "sha256": "7400f80a7b45ef735099d0e8768e306027fb479d807420c32bcbfd1f640092c2",
+      "theorems": [
+        "eval_orbitDiagramNodeFormula",
+        "eval_orbitDiagramEdgeFormula",
+        "orbit_diagram_edge_nodes",
+        "orbit_diagram_codes_exist",
+        "orbit_diagram_node_map",
+        "orbit_diagram_edge_map"
+      ]
+    },
+    {
+      "file": "OrbitDiagramComponents.lean",
+      "sha256": "acbbf30618a667f88ac5cb0ad0a86faf60193762b62ff32e7cb5fa645bbe7ea4",
+      "theorems": [
+        "orbit_diagram_component_exists",
+        "orbit_graph_parameter_code_unique",
+        "graph_parameter_stabilizer_iff",
+        "parameter_stabilizer_preserves_component"
+      ]
+    },
+    {
+      "file": "JointOrbitDiagrams.lean",
+      "sha256": "5c01610cab7d228feb5f76562445a5fe695883f01dccc66519d5f80da4b7b17e",
+      "theorems": [
+        "joint_domain_graph_actions",
+        "coded_orbit_diagram_exists",
+        "actual_request_orbit_diagram"
+      ]
+    },
+    {
+      "file": "OrbitDiagramInstances.lean",
+      "sha256": "2d32d5ee00c924d2b63ceeb49c1b04b0e5db3ad84d0bcdf7a684c908c648a965",
+      "theorems": [
+        "coded_mask_chain_transitive_joint_covers",
+        "countable_bafa_request_orbit_diagrams",
+        "hereditary_mask_graph_parameter",
+        "supported_parameter_tail_preserves_component"
+      ]
+    },
+    {
+      "file": "OrbitComponentSolutions.lean",
+      "sha256": "4171a12c4c7f0985fe63bf12cf8ab015f865fe60d490b2f22fa560315c4fd937",
+      "theorems": [
+        "orbit_component_decoration_pullback",
+        "orbit_component_least_pullback_injective",
+        "orbit_component_pullback_fixes_boundary",
+        "orbit_component_pullback_equivariant",
+        "orbit_component_pullback_hereditary"
+      ]
+    },
+    {
+      "file": "OrbitBoundaryCodes.lean",
+      "sha256": "20f08ec0905333f5d628e34ba6e2ae509d4147eb6fc3e251e96fc0521705ab06",
+      "theorems": [
+        "eval_orbitBoundaryValueFormula",
+        "orbit_boundary_value_unique",
+        "orbit_boundary_node",
+        "orbit_boundary_codes_exist",
+        "orbit_boundary_value_map",
+        "orbit_boundary_exists",
+        "orbit_boundary_on_component",
+        "orbit_boundary_values_in_old",
+        "orbit_boundary_equivariant"
+      ]
+    },
+    {
+      "file": "BoundaryRenamings.lean",
+      "sha256": "493a4111d1584d31f6ec83e5283401268bd31155d87030a0e5c9ae5d30e0b8a6",
+      "theorems": [
+        "boundary_renaming_exists",
+        "boundary_renaming_on_boundary",
+        "orbit_boundary_renaming_component_injective"
+      ]
+    },
+    {
+      "file": "BoundaryGraphAttachments.lean",
+      "sha256": "e08e2b6fd520ea0862ced733f5f6b2e5673a11472303ca1dc73786770ff35464",
+      "theorems": [
+        "boundary_graph_attachment_exists",
+        "boundary_attachment_decoration_pullback"
+      ]
+    },
+    {
+      "file": "AttachedOrbitComponents.lean",
+      "sha256": "f41abca436cab30927fd6e44d058a597185fd8eedae931de7d9166e464dc3518",
+      "theorems": [
+        "closed_graph_copy_decoration_pullback",
+        "closed_graph_copy_least_pullback_injective",
+        "attached_orbit_component_exists",
+        "attached_orbit_component_fixes_old"
+      ]
+    },
+    {
+      "file": "FixedOrbitRealizations.lean",
+      "sha256": "46b8ad9e0dd3e02356bf16cdb08742148eb05761211d5bedcbd0ae4479a77838",
+      "theorems": [
+        "bafa_fixed_orbit_realization",
+        "bafa_fixed_orbit_realization_of_bound",
+        "actual_request_fixed_orbit_realization"
+      ]
+    },
+    {
+      "file": "BoundaryActionCodes.lean",
+      "sha256": "ce0c57812c4c6364cddbb2e39a8b405dabe063a5b222f22d43f983d43908cab1",
+      "theorems": [
+        "boundary_action_old",
+        "boundary_action_copy",
+        "boundary_action_function"
+      ]
+    },
+    {
+      "file": "BoundaryGroupActions.lean",
+      "sha256": "50ccd5098dbd2838841590ff45a0f2c500c773568d96a7ec1a31f0cdfcce9929",
+      "theorems": [
+        "boundary_group_action"
+      ]
+    },
+    {
+      "file": "JointBoundaryFamilies.lean",
+      "sha256": "e2565e209d2554920a281a21661fe17ec2b59a6f6c2d9e48111c206484339ab0",
+      "theorems": [
+        "joint_boundary_action_family"
+      ]
+    },
+    {
+      "file": "JointBoundaryRealizations.lean",
+      "sha256": "5381bb67f151bbc731d857c648f3444b8de57a5bd0b58c1253e67eee34127416",
+      "theorems": [
+        "bafa_joint_boundary_realization"
+      ]
+    },
+    {
+      "file": "JointOrbitRealizations.lean",
+      "sha256": "50d670e95a1a252979bab5427cd8832a37b25e676086a8f49313abab9961b84d",
+      "theorems": [
+        "orbit_diagram_coded_graph_action",
+        "orbit_boundary_action_compatible",
+        "joint_boundary_component_solution",
+        "bafa_joint_orbit_realization"
+      ]
+    },
+    {
+      "file": "GlobalOrbitSolutions.lean",
+      "sha256": "2ff934e5b5cf68ca9585e37e4c5c463186f72c6c19837f8b4c245f7ff0e8b9fe",
+      "theorems": [
+        "countable_bafa_transitive_joint_extension",
+        "hereditary_mask_agreement_on_transitive",
+        "countable_joint_orbit_global_extension",
+        "joint_orbit_stage_exists",
+        "countable_bafa_supported_orbit_extension"
+      ]
+    },
+    {
+      "file": "JointUniverseStates.lean",
+      "sha256": "4d5a0923321521a73ef86c7224c5d9d79a9beafaea974b3b30f21ba6bea62ab4",
+      "theorems": [
+        "joint_universe_involutive",
+        "joint_universe_state_exists",
+        "joint_universe_retained_agreement",
+        "joint_universe_retain",
+        "hereditary_mask_ordered_pair_components",
+        "hereditary_mask_request_components",
+        "coded_mask_extends_trans",
+        "joint_universe_retained_joint"
+      ]
+    },
+    {
+      "file": "ScheduledRequestSteps.lean",
+      "sha256": "c21cbba9a8434521b0a3919e6ff6057a0de5e9c86be1837b5afa9e3aa182dd88",
+      "theorems": [
+        "scheduled_request_step_exists"
+      ]
+    },
+    {
+      "file": "ScheduledUniverseChains.lean",
+      "sha256": "04a92dc0df68fe63ec462fec7dc23708b4be962dade90d2539f220599177e384",
+      "theorems": [
+        "scheduled_universe_chain_exists",
+        "scheduled_chain_map_agreement",
+        "scheduled_chain_support_agreement",
+        "scheduled_chain_all_supported_requests"
+      ]
+    },
+    {
+      "file": "ScheduledMaskBAFA.lean",
+      "sha256": "d3499f5256139f01472cc7e7e4871963c2311daf3c7a91041dcaf22019829f22",
+      "theorems": [
+        "mask_end_extension_iff",
+        "mask_bafa_of_supported_requests",
+        "scheduled_chain_mask_bafa",
+        "countable_bafa_scheduled_mask_action"
+      ]
+    },
+    {
+      "file": "ScheduledNoChoiceCandidate.lean",
+      "sha256": "08b1407b1557386732201c05c28d256766db806530ac76d994b0a4759165469f",
+      "theorems": [
+        "countable_bafa_scheduled_no_choice_candidate"
+      ]
+    },
+    {
+      "file": "MaskOrbitBounds.lean",
+      "sha256": "765bbc682079af721a0fc7690c863d0500f09f353b4b417edbb2eb05a949e071",
+      "theorems": [
+        "eval_maskOrbitHullFormula",
+        "joint_mask_orbit_hull_exists",
+        "hereditary_mask_orbit_bound",
+        "mask_collection_iff_hereditary_witness_bounds"
+      ]
+    },
+    {
+      "file": "MaskSeparationTraces.lean",
+      "sha256": "0a3f8e48f69dd8e23b10a674da293befa0e74db37324853ba2d6b1b6348dd336",
+      "theorems": [
+        "restricted_mask_involutive",
+        "restricted_mask_elementary",
+        "mask_trace_member",
+        "mask_trace_hereditary",
+        "mask_formula_trace_supported",
+        "mask_separation_iff_traces"
+      ]
+    },
+    {
+      "file": "MaskTruthGap.lean",
+      "sha256": "34610f2d3214fb33c911027b853e4fa6aac95d6c6340ae5ec42453f45d9a03a6",
+      "theorems": [
+        "mask_no_supported_selector",
+        "mask_selector_truth_gap",
+        "mask_inclusion_not_elementary"
+      ]
+    },
+    {
+      "file": "ScheduledSchemeCriteria.lean",
+      "sha256": "73f6cb65443f93e4521fae9ec87b3258fa5e873e7c79c89b9ce176c6fb78a492",
+      "theorems": [
+        "countable_bafa_scheduled_scheme_criteria"
+      ]
+    },
+    {
+      "file": "FiniteContextCollection.lean",
+      "sha256": "0cfa13a6307badbc34c4911b038b6c9caa4797af1fb406599fb7847e1d35b3c9",
+      "theorems": [
+        "prefix_env_index",
+        "prefix_env_rename",
+        "eval_allPrefix",
+        "eval_prefixWitnessBoundFormula",
+        "insert_after_prefix_env",
+        "switch_second_third_env",
+        "finite_context_collection",
+        "prefix_env_nil",
+        "finite_context_partial_collection"
+      ]
+    },
+    {
+      "file": "BoundedLocalDefinitions.lean",
+      "sha256": "a4111af97d3e4a7f360cb30f3a14324e09c352675cab8aeac194d44140290e01",
+      "theorems": [
+        "bounded_eval_rename",
+        "join_env_left",
+        "join_env_right",
+        "collection_local_bounded_definitions"
+      ]
+    },
+    {
+      "file": "CollectionFullSeparation.lean",
+      "sha256": "4b784a3038d60eca2087bbd51e8782ac18ba23fe466d3956f1cb776b9dacf64c",
+      "theorems": [
+        "collection_bounded_separation_full_separation",
+        "collection_bounded_separation_replacement",
+        "mask_witness_bounds_full_base"
+      ]
+    },
+    {
+      "file": "ScheduledCollectionReduction.lean",
+      "sha256": "d6fd38b0451f069cae4b93dfa7ac4d41bb26d81334b85a71ca6a851aa45219bf",
+      "theorems": [
+        "countable_bafa_scheduled_collection_reduction"
+      ]
+    },
+    {
+      "file": "InternalMaskCovers.lean",
+      "sha256": "f4b143c214c6d5435f458fcb72c7e60e8921303870e077a6509588950f85b741",
+      "theorems": [
+        "internal_mask_covered_hereditary",
+        "internal_mask_covered_member",
+        "internal_mask_cover_restrict",
+        "internal_mask_covered_invariant",
+        "eval_internalMaskCoreFormula",
+        "joint_internal_mask_core_formula"
+      ]
+    },
+    {
+      "file": "JointInternalMaskCores.lean",
+      "sha256": "162fc7134ee9bdb156090491aa42d3c833b3d19e5008e6baeb91fce928b61486",
+      "theorems": [
+        "hereditary_transitive_internal_mask_covered",
+        "joint_internal_mask_core_exists",
+        "internal_mask_core_maximal",
+        "internal_mask_covered_iff_H_transitive_cover",
+        "internal_mask_covered_trace_exists"
+      ]
+    },
+    {
+      "file": "MaskCoveredWitnesses.lean",
+      "sha256": "057d8f868eb00b3c32718dfeb1e77e513ce51e2f36b73e3181cc8a779244182a",
+      "theorems": [
+        "mask_base_all_internally_covered",
+        "mask_uncovered_obstructs_full_base",
+        "mask_base_hereditary_trace_exists",
+        "mask_covered_witness_bounds_to_hereditary",
+        "mask_full_base_covered_witness_bounds",
+        "mask_base_iff_covered_witness_bounds"
+      ]
+    },
+    {
+      "file": "ScheduledInternalCores.lean",
+      "sha256": "b3c29410cafc5880b4314aef92e299a564c014dc56a8927103c8000bf14a1c78",
+      "theorems": [
+        "countable_bafa_scheduled_internal_cores"
+      ]
+    },
+    {
+      "file": "MaskCoveredCoding.lean",
+      "sha256": "44ac25efa58e88059158d0916b67f4e95811d69ae13b1c5ba8e0e208c0280b3a",
+      "theorems": [
+        "mask_covered_of_supported_subset",
+        "mask_covered_common_transitive_cover",
+        "mask_covered_pair",
+        "mask_covered_union",
+        "mask_covered_normalized_relation"
+      ]
+    },
+    {
+      "file": "MaskCoveredDecorations.lean",
+      "sha256": "9cfe7c74675331d959751513e19b24ac609120d1d7ac2469c1bedf03bcf8b6db",
+      "theorems": [
+        "transitive_contains_ordered_pair_components",
+        "mask_covered_function_iff",
+        "mask_decoration_covered_range",
+        "mask_decoration_covered_iff_domain"
+      ]
+    },
+    {
+      "file": "CoveredBafaWitnesses.lean",
+      "sha256": "3d83496c352f4a42ccfcadec40ec844c050b4f10ae2e4dd371786a13e8cc38e2",
+      "theorems": [
+        "mask_bafa_covered_witnesses",
+        "mask_bafa_witnesses_in_joint_core"
+      ]
+    },
+    {
+      "file": "ScheduledCoveredRealizations.lean",
+      "sha256": "18d422416157700c36f78e6beb01559059511c790bf5c53e226899fe5df8cd90",
+      "theorems": [
+        "countable_bafa_scheduled_covered_realizations"
+      ]
+    },
+    {
+      "file": "CoveredMaskCoding.lean",
+      "sha256": "edfcaaaa2ac385dc1dff0c65ff3dba5333cdba66cbd050831ebf9ce270415874",
+      "theorems": [
+        "covered_mask_pair_iff",
+        "covered_mask_ordered_pair_iff",
+        "covered_mask_coded_relation_iff",
+        "covered_mask_relation_components",
+        "covered_mask_choice_function_ambient"
+      ]
+    },
+    {
+      "file": "CoveredMaskGraphs.lean",
+      "sha256": "c736c2c89fad923c12a6d8b7e7683df3a5818baf86cb1fa894a87703de892596",
+      "theorems": [
+        "covered_mask_function_iff",
+        "covered_mask_graph_iff",
+        "covered_mask_graph_extensional_iff",
+        "covered_mask_injective_iff",
+        "covered_mask_decoration_iff",
+        "covered_mask_transitive_iff",
+        "covered_mask_range_iff"
+      ]
+    },
+    {
+      "file": "CoveredMaskSchemes.lean",
+      "sha256": "2526e3d9460d2308c3744d3610a3fdf4bf33030b4c2c111460e2b0d65327d250",
+      "theorems": [
+        "covered_mask_extensional",
+        "covered_mask_empty",
+        "covered_mask_pairing",
+        "covered_mask_union",
+        "mask_covered_H_subset",
+        "covered_mask_cons_values",
+        "covered_mask_bounded_absoluteness",
+        "covered_mask_bounded_separation",
+        "covered_mask_infinity"
+      ]
+    },
+    {
+      "file": "CoveredMaskPowers.lean",
+      "sha256": "318cb5c217fbdbf3015a42bfcc19facab98b943e7d86f7336456824df51d64c0",
+      "theorems": [
+        "covered_mask_subset_iff",
+        "mask_covered_power_trace",
+        "covered_mask_power",
+        "covered_mask_transitive_containment"
+      ]
+    },
+    {
+      "file": "CoveredMaskBAFA.lean",
+      "sha256": "1d31f33810552e40dcd973b0b8ad5bcdc303e02964ac569cf5a38a7fe9ddff73",
+      "theorems": [
+        "covered_mask_end_extension_iff",
+        "covered_mask_bafa"
+      ]
+    },
+    {
+      "file": "CoveredMaskChoice.lean",
+      "sha256": "e35d3e2f6778041537f03d2cbd757fd8579aed75c38300a553ba94209d47175a",
+      "theorems": [
+        "quine_pair_family_internally_covered",
+        "covered_mask_not_choice"
+      ]
+    },
+    {
+      "file": "CoveredMaskCollection.lean",
+      "sha256": "a2ed21b3f7914a126924c2b7327f98d4f05b29155df695be4b2a75b653eadb93",
+      "theorems": [
+        "covered_mask_absorbs_source_bound",
+        "covered_mask_collection_iff_source_bounds"
+      ]
+    },
+    {
+      "file": "CoveredMaskCandidate.lean",
+      "sha256": "67560adfa39ad6543d4446e072280155f4968f1aba2d5e0f0577eeb41791769e",
+      "theorems": [
+        "countable_bafa_covered_candidate"
+      ]
+    },
+    {
+      "file": "CoveredMaskActions.lean",
+      "sha256": "c9136239f4b3f88eadaeee225b12489693fff60d691dfd5828e789432cbd942c",
+      "theorems": [
+        "covered_mask_map_involutive",
+        "covered_mask_map_elementary",
+        "covered_mask_witness_transport",
+        "covered_mask_set_of_covered_members",
+        "covered_mask_orbit_bound"
+      ]
+    },
+    {
+      "file": "MaskTailOrbits.lean",
+      "sha256": "c406372cb50c0a544749155bdc17bf1a257dbc08b483627bd3eb43c9f253351d",
+      "theorems": [
+        "tail_mask_mul",
+        "eval_tailOrbitPointFormula",
+        "joint_tail_orbit_point",
+        "joint_tail_orbit_set_formula",
+        "joint_tail_orbit_exists",
+        "tail_orbit_contains_seed",
+        "tail_orbit_fixed",
+        "tail_orbit_subset",
+        "tail_orbit_member_transport"
+      ]
+    },
+    {
+      "file": "CoveredTailOrbitFamilies.lean",
+      "sha256": "6fdd26ec2ed205c21c8f6a3cb1a11b1a5accab3bc7070b83f6b1ad75a29f5a2d",
+      "theorems": [
+        "joint_tail_orbit_family",
+        "covered_tail_orbit_family"
+      ]
+    },
+    {
+      "file": "CoveredFixedInputCollection.lean",
+      "sha256": "818a3f24c3bc2bd04604392d6603c2e039cdbce0997fc19012b09d537ece39e3",
+      "theorems": [
+        "eval_orbitWitnessFormula",
+        "covered_collection_iff_tail_fixed_source_bounds",
+        "covered_finite_tail_orbit_collection"
+      ]
+    },
+    {
+      "file": "ScheduledFixedInputReduction.lean",
+      "sha256": "ec32afac9bfaa76c5adfa4dedf9ec6500b3bc925be5abba511e88228e62a3aaa",
+      "theorems": [
+        "covered_quine_family_pointwise_fixed",
+        "covered_base_iff_tail_fixed_source_bounds",
+        "countable_bafa_covered_fixed_input_reduction"
+      ]
+    },
+    {
+      "file": "CodedMaskEmbeddings.lean",
+      "sha256": "5adc9b5ab8ee1692d62b5aa1578de0664c95516aac0b632f9af48e9ea9cb2c03",
+      "theorems": [
+        "coded_mask_embedding_value",
+        "coded_mask_embedding_action_iff",
+        "coded_mask_embedding_behavior",
+        "bafa_coded_mask_amalgamation",
+        "bafa_coded_mask_two_extensions"
+      ]
+    },
+    {
+      "file": "CodedActionCovers.lean",
+      "sha256": "f1ead8b51033878e4c60c3d2c7e149a9a31af98800be0e5b5c4806a4b3c95ce4",
+      "theorems": [
+        "eval_actionPointSupportFormula",
+        "joint_point_support_action",
+        "eval_actionCoveredFormula",
+        "action_covered_iff_global",
+        "coded_mask_embedding_support_iff",
+        "coded_mask_embedding_cover_forward",
+        "coded_mask_embedding_cover_reflects",
+        "coded_mask_embedding_cover_iff"
+      ]
+    },
+    {
+      "file": "PrescribedCoveredCandidates.lean",
+      "sha256": "b221919493e8c1084b66a58341f2135e67688d58c66b5e303ad723ef1f298642",
+      "theorems": [
+        "coded_action_global_agreement",
+        "countable_bafa_prescribed_covered_candidate",
+        "countable_bafa_amalgamated_covered_candidate"
+      ]
+    },
+    {
+      "file": "ActionEmbeddingSemantics.lean",
+      "sha256": "85ca33e4ab3042cb8d3c6f0b04b2d3d938dd34ccf7112c207d10218b566dab3c",
+      "theorems": [
+        "membership_iso_bounded_semantics",
+        "coded_mask_embedding_bounded_semantics",
+        "coded_mask_embedding_bounded_fixed_parameters",
+        "coded_action_bounded_witness_into_Hc"
+      ]
+    },
+    {
+      "file": "RecurrentEnumeration.lean",
+      "sha256": "7cc67a81997785e1f11ceb01564692489bfcdf46f898480737703b7a6f69387d",
+      "theorems": [
+        "diagonal_block",
+        "diagonal_start_value",
+        "diagonal_start_ge",
+        "diagonal_index_cofinal",
+        "recurrent_enum_cofinal",
+        "recurrent_enum_onto"
+      ]
+    },
+    {
+      "file": "CodedActionRequests.lean",
+      "sha256": "b4c845c995694806c9d9e7b89e654a6eab40af5f4c26239c531415bb05edf7ed",
+      "theorems": [
+        "coded_mask_action_ext",
+        "action_request_code_exists",
+        "action_request_code_unique",
+        "coded_mask_embedding_mono",
+        "action_request_sealed_mono"
+      ]
+    },
+    {
+      "file": "UniversalRequestSteps.lean",
+      "sha256": "2e6d5cabdf9a92b5cfd03063169095eafae3086d122bcb8aafb333637a2e9c74",
+      "theorems": [
+        "action_request_step_exists",
+        "universal_request_step_exists",
+        "universal_universe_chain_exists"
+      ]
+    },
+    {
+      "file": "UniversalMaskRealizations.lean",
+      "sha256": "512b917fdf586c3460ca49141da6fc8d38ededa90bd3585981f0dd01eaa6951b",
+      "theorems": [
+        "universal_chain_realizations",
+        "countable_bafa_universal_mask_action",
+        "universal_mask_realizations_covered"
+      ]
+    },
+    {
+      "file": "UniversalCoveredCandidate.lean",
+      "sha256": "9f9c38854c4ab515337c78d64ee1290654ce81cad8331cb9ea0a6a5dff9450fe",
+      "theorems": [
+        "countable_bafa_universal_covered_candidate"
+      ]
+    },
+    {
+      "file": "UniversalLocalWitnesses.lean",
+      "sha256": "ad716c3f929c459a3e40959eed1757dda23c4222f1879a441c777a437e65d848",
+      "theorems": [
+        "coded_action_global_stable",
+        "coded_action_extension_global_compatible",
+        "universal_Hc_bounded_existential_certificate"
+      ]
+    },
+    {
+      "file": "RawMaskActionSyntax.lean",
+      "sha256": "1d1d0751145f4aeac149fc15e1ac59524501fa1b84195f8148ed25ee10b829c3",
+      "theorems": [
+        "eval_membershipIsoFormula",
+        "eval_rawMaskIdentityFormula",
+        "eval_rawFunctionMulFormula",
+        "eval_rawMaskMultiplicationFormula",
+        "eval_rawMaskActionFormula"
+      ]
+    },
+    {
+      "file": "RawMaskActionRepresentation.lean",
+      "sha256": "5c3cce8e6a5b0bb7f45e43379795a5fb52a51d3e86bd3c71e86c45de687887d8",
+      "theorems": [
+        "action_family_point_iff",
+        "coded_mask_action_raw",
+        "raw_mask_action_record",
+        "raw_mask_action_iff_record"
+      ]
+    },
+    {
+      "file": "RawActionExtensions.lean",
+      "sha256": "236ed2222e036310feed36f44a1ef753d1c5d8ee2bae7c5ddb4fffcdd4d26719",
+      "theorems": [
+        "eval_rawActionExtendsFormula",
+        "raw_action_extends_iff",
+        "eval_rawActionCoveredFormula",
+        "raw_action_covered_iff"
+      ]
+    },
+    {
+      "file": "LocalWitnessSourceSyntax.lean",
+      "sha256": "f8f1cd72f6300c5f7c2e5eda31606740392a9422051df619a78c8e6840ecf394",
+      "theorems": [
+        "eval_boundedLocalWitnessFormula",
+        "bounded_local_source_iff_record"
+      ]
+    },
+    {
+      "file": "UniversalWitnessSource.lean",
+      "sha256": "f1fe174ffe0fc6a35bf1d2b729d8034e8ec062188b03b7dc81ec4a7990042ef8",
+      "theorems": [
+        "universal_Hc_bounded_existential_source_formula"
+      ]
+    },
+    {
+      "file": "LocalWitnessPackages.lean",
+      "sha256": "ceb64510d8f34e2f44b779bd4c4c91159ebbfa9064ca3528aba6f2b68c06fc13",
+      "theorems": [
+        "eval_localWitnessPackageFormula",
+        "local_witness_package_iff_record",
+        "local_witness_package_collection",
+        "local_witness_source_bound"
+      ]
+    },
+    {
+      "file": "ActionFamilies.lean",
+      "sha256": "c575d0f87c291780b40e3954a1c56879c1b4d7c821b0c6bf51b851e8d00bf0a1",
+      "theorems": [
+        "action_family_member_unique",
+        "family_action_member",
+        "eval_witnessFamilyFilterFormula",
+        "local_witness_action_family"
+      ]
+    },
+    {
+      "file": "ActionFamilyDiagrams.lean",
+      "sha256": "778dd3be8f31b93fc2d780f8737fabafc7c9afc4a5ca9fdb18122c714649a2ef",
+      "theorems": [
+        "eval_familyDiagramEdgeFormula",
+        "eval_familyDiagramMoveFormula",
+        "action_family_parameters",
+        "family_diagram_edge_iff",
+        "family_diagram_move_iff",
+        "family_diagram_edge_nodes",
+        "action_family_diagram_exists"
+      ]
+    },
+    {
+      "file": "ActionFamilyMoves.lean",
+      "sha256": "e51415d5633845905755ea50450f676a1542f3f29c2465340cc3c1a520c0d09d",
+      "theorems": [
+        "action_family_node",
+        "family_diagram_move_from",
+        "family_diagram_move_to",
+        "family_diagram_move_nodes",
+        "family_diagram_move_total_unique",
+        "family_diagram_move_injective",
+        "family_diagram_move_surjective",
+        "family_diagram_edge_from",
+        "family_diagram_move_edges",
+        "family_diagram_move_one",
+        "family_diagram_move_mul"
+      ]
+    },
+    {
+      "file": "JointActionFamilyDiagrams.lean",
+      "sha256": "e289222cbd1d460f01a0b577980f8ac64ba5fd8cd06aaad250a2e2a5cc770555",
+      "theorems": [
+        "action_family_joint_graph_action"
+      ]
+    },
+    {
+      "file": "ActionFamilyBoundaries.lean",
+      "sha256": "6801a069762351b6a2f060f83609d806bc45486a8025abc80a63d98ea7ad12e9",
+      "theorems": [
+        "eval_familyBoundaryValueFormula",
+        "family_boundary_value_unique",
+        "family_boundary_node",
+        "action_family_boundary_exists",
+        "action_family_boundary_old",
+        "action_family_boundary_compatible"
+      ]
+    },
+    {
+      "file": "ActionFamilyComponents.lean",
+      "sha256": "83a7b265cc42f9dfc1c0a00b7603e92d2055dbeec81d236ddff696b6ca49dcaa",
+      "theorems": [
+        "family_boundary_tag_injective",
+        "action_family_attached_component"
+      ]
+    },
+    {
+      "file": "ActionFamilyAmalgamation.lean",
+      "sha256": "5155f857177aeb99e3bd615923fef0b6aaa1694b73a5f73e8ca348a1706020fd",
+      "theorems": [
+        "joint_family_component_embedding",
+        "bafa_coded_mask_family_amalgamation"
+      ]
+    },
+    {
+      "file": "LocalWitnessAmalgamation.lean",
+      "sha256": "f2b564434fbf9559ccec1d4dfc6841a843bd2601bcf0aff0bc662b6f5e124ffc",
+      "theorems": [
+        "local_witness_common_action"
+      ]
+    },
+    {
+      "file": "UniversalBoundedCollection.lean",
+      "sha256": "4a33e7b1d405d641bc7d681ab5be0406945fead209f4d16b31d2d2bd4d3f5d93",
+      "theorems": [
+        "universal_Hc_bounded_source_bound",
+        "universal_Hc_bounded_collection"
+      ]
+    },
+    {
+      "file": "BoundedCollectionCandidate.lean",
+      "sha256": "61857f8da353afc07dee78117dadfbf740488e93310651f2703ef4005fb94c06",
+      "theorems": [
+        "countable_bafa_bounded_collection_candidate"
+      ]
+    },
+    {
+      "file": "InjectiveBoundaryCopies.lean",
+      "sha256": "7454729b359e0b41076f442ef8bc2d452712a61cff36b7232e4c62dc49482a77",
+      "theorems": [
+        "boundary_renaming_injective",
+        "injective_boundary_closed_copy",
+        "joint_injective_boundary_solution"
+      ]
+    },
+    {
+      "file": "EquivariantEmbeddingExtensions.lean",
+      "sha256": "685fd5a588886dbf247a2ac1c51076e0180fdff290469660dfabae2aea5d7ca1",
+      "theorems": [
+        "bafa_coded_mask_embedding_extension"
+      ]
+    },
+    {
+      "file": "CodedMaskIsomorphisms.lean",
+      "sha256": "53648e89d1c3b6facbb1ba986ddbe4bd564f44d47cd787a07358cc769b2fc03f",
+      "theorems": [
+        "coded_mask_isomorphism_inverse",
+        "coded_mask_embeddings_compose",
+        "coded_mask_isomorphisms_compose"
+      ]
+    },
+    {
+      "file": "GlobalActionImages.lean",
+      "sha256": "2557fabd78974885d9cb163b662beb407569283a2d64dba1d9a32a55c90a6523",
+      "theorems": [
+        "coded_action_joint_domain",
+        "global_embedding_image_action",
+        "global_coded_action_extend_point"
+      ]
+    },
+    {
+      "file": "UniversalActionBackAndForth.lean",
+      "sha256": "36e60f53f205a11e6732e9c877868ab357be5feb47f8262500dc5c423a904e61",
+      "theorems": [
+        "global_action_iso_covered_iff",
+        "universal_action_iso_forth"
+      ]
+    },
+    {
+      "file": "UniversalActionSemantics.lean",
+      "sha256": "d3c9a10491424797b63daac63e5894c81b636e468760e13c6acf235bcddb969b",
+      "theorems": [
+        "universal_action_extend_covered_environment",
+        "universal_action_iso_semantics"
+      ]
+    },
+    {
+      "file": "LocalActionTruth.lean",
+      "sha256": "ccb95fab11cfd5b97ee81e84d18f1464ebcc9fc1007ec3fff6dd298b06b31d19",
+      "theorems": [
+        "universal_any_action_realized",
+        "local_realizations_full_semantics",
+        "local_action_truth_realization_iff",
+        "local_action_truth_parameters_covered",
+        "local_action_truth_embedding"
+      ]
+    },
+    {
+      "file": "LocalActionTruthInterfaces.lean",
+      "sha256": "94c313d976a32700158e99730587ecd9a193e3d52652564a7d3e61e2a0a9c2df",
+      "theorems": [
+        "coded_mask_one_graph",
+        "codedMaskIdentityIso",
+        "local_action_truth_extension",
+        "global_action_local_truth_iff",
+        "local_action_truth_exists_intro"
+      ]
+    },
+    {
+      "file": "LocalActionQuantifiers.lean",
+      "sha256": "7b2ab881eb45ed89a3e500f1eb023eedf86f04af2615bec53864eeb202f6622d",
+      "theorems": [
+        "local_action_truth_exists"
+      ]
+    },
+    {
+      "file": "LocalActionTruthLogic.lean",
+      "sha256": "8065d0c8eb9fc6c46fc71b723f9cc92b8465a4a29d443e2a280c42518f922b78",
+      "theorems": [
+        "action_covered_domain",
+        "covered_action_environment_realized",
+        "local_action_truth_bounded",
+        "local_action_truth_conj",
+        "local_action_truth_impl",
+        "local_action_truth_negation",
+        "local_action_truth_all_dual"
+      ]
+    },
+    {
+      "file": "FullActionSourceSyntax.lean",
+      "sha256": "2b896abce9a6001608255e7cbc62b92074977a26955acd826df8dd22d7b8ef80",
+      "theorems": [
+        "eval_actionExtensionFormula",
+        "action_extension_source_iff_record",
+        "action_covered_extension",
+        "eval_actionTranslate"
+      ]
+    },
+    {
+      "file": "UniversalFullSourceTruth.lean",
+      "sha256": "8ea3721ebd1807eaf83378fc48768f959c70df3b603994871a83709f32e013eb",
+      "theorems": [
+        "universal_Hc_source_translation"
+      ]
+    },
+    {
+      "file": "FullWitnessPackages.lean",
+      "sha256": "d37eca12423cf2b32c4c54add76f090da4112423ad565515251ba90c37a04e4c",
+      "theorems": [
+        "eval_fullWitnessPackageFormula",
+        "full_witness_package_iff_record",
+        "eval_fullWitnessFamilyFilterFormula"
+      ]
+    },
+    {
+      "file": "FullWitnessFamilies.lean",
+      "sha256": "8fc7e790b2c402e9878b47922fa7d2442d4fa7b6d785ac729c7c707900fcd0b4",
+      "theorems": [
+        "full_witness_action_family",
+        "full_witness_common_action"
+      ]
+    },
+    {
+      "file": "UniversalFullCollection.lean",
+      "sha256": "7657fd62ad312b156b21b8cb3b10ed1fafffb4289e96f7f11b63b57429f5aca8",
+      "theorems": [
+        "universal_Hc_full_source_bound",
+        "universal_Hc_full_collection"
+      ]
+    },
+    {
+      "file": "CompleteCoveredModel.lean",
+      "sha256": "8af86783fcf62f0ad405f1fc37d39e545fc6be6790b8d9ffff1804cbd73d65e0",
+      "theorems": [
+        "universal_Hc_full_base",
+        "countable_bafa_full_no_choice_model",
+        "countable_bafa_no_choice_complete_bridge"
+      ]
+    },
+    {
+      "file": "CoveredBehaviorAbsoluteness.lean",
+      "sha256": "dfe870cfa525272635f14684c4de699be8ae00ba8b2cf6e0e757fc3a3bdeed94",
+      "theorems": [
+        "covered_mask_augmented_bisimulation_iff",
+        "covered_mask_internal_behavior_forward",
+        "covered_mask_internal_behavior_iff"
+      ]
+    },
+    {
+      "file": "TrivialActionRepresentatives.lean",
+      "sha256": "ced840af1791fc79b1092aa15530ef299df3ba130412639f7207ba71202aaab1",
+      "theorems": [
+        "trivial_coded_mask_action",
+        "universal_fixed_transitive_copy",
+        "universal_covered_behavior_representative"
+      ]
+    },
+    {
+      "file": "CoveredQuotientComparison.lean",
+      "sha256": "d4e7bae814afa21404881fcd3bc2200e7c264fd2659b14fe7727801ecadb2cf4",
+      "theorems": [
+        "covered_quotient_map_code",
+        "covered_quotient_map_injective",
+        "covered_quotient_map_surjective",
+        "covered_quotient_map_members",
+        "covered_quotient_map_elementary",
+        "covered_quotient_choice_iff"
+      ]
+    },
+    {
+      "file": "CompleteChoiceSeparation.lean",
+      "sha256": "c7cef7987bcc30bf131e859001c5c428380c8200bf7b7d26b85aedb09a20903b",
+      "theorems": [
+        "covered_quotient_inherits_ambient_choice",
+        "countable_bafa_full_choice_separation"
+      ]
+    },
+    {
+      "file": "ExactNoChoiceLifts.lean",
+      "sha256": "b8e05a9cb29f5ff231486206fc76bc8b29b5648656f40c85bcbd8e5f51fb9717",
+      "theorems": [
+        "countable_afa_exact_no_choice_lift",
+        "countable_afa_theory_no_choice_lift"
+      ]
+    },
+    {
+      "file": "FormulaEnumeration.lean",
+      "sha256": "43336b4319f23de4ba125df76f71c9a7bd3daf6e20f0d2037dfe38df58923eec",
+      "theorems": [
+        "natPairDecode_code",
+        "natTupleEnumeration_code",
+        "natTupleEnumeration_onto",
+        "formulaDecode_code",
+        "formulaEnumeration_onto"
+      ]
+    },
+    {
+      "file": "CountableElementaryHull.lean",
+      "sha256": "fbf7a3683da59a0d13256e53129be6e188450d41362fc22cd011266d7bafd2bd",
+      "theorems": [
+        "subtype_cons_environment",
+        "existential_witness_closed_elementary",
+        "formulaWitness_spec",
+        "elementaryHullNext_retains",
+        "elementaryHullNext_witness",
+        "elementaryHullStage_extends",
+        "elementaryHull_common_stage",
+        "elementaryHull_witness_closed",
+        "elementaryHullEnumeration_onto",
+        "countable_elementary_hull",
+        "countable_elementary_hull_of_seed"
+      ]
+    },
+    {
+      "file": "ElementaryModelTransfer.lean",
+      "sha256": "3480cff41d1e1fe5dd005b9691f7cf7dd9c0359305967b22c556236eedd6408b",
+      "theorems": [
+        "elementary_map_sentence",
+        "eval_finiteBaseSentence",
+        "eval_separationInstance",
+        "eval_collectionInstance",
+        "elementary_map_separation_reflect",
+        "elementary_map_collection_reflect",
+        "elementary_map_base_reflect",
+        "elementary_map_afa_iff",
+        "elementary_map_bafa_iff",
+        "elementary_map_choice_iff"
+      ]
+    },
+    {
+      "file": "CountableAfaModels.lean",
+      "sha256": "d70def47f2edbd195ff9f304085d937e608029e200c2bb194a68c035240ad947",
+      "theorems": [
+        "countable_afa_elementary_model_with_parameters",
+        "countable_afa_elementary_model"
+      ]
+    },
+    {
+      "file": "UnrestrictedNoChoiceTransfer.lean",
+      "sha256": "f5a1e06c97583c553fcc3752a4f126cedef0efeded5efa057d797c5e4445d0a0",
+      "theorems": [
+        "elementary_map_satisfies_theory",
+        "afa_no_choice_elementary_lift_with_parameters",
+        "afa_no_choice_elementary_lift",
+        "afa_theory_no_choice_lift",
+        "afa_no_choice_theory_model_existence",
+        "afa_no_choice_model_existence_iff",
+        "bafa_no_choice_behavior_satisfiability",
+        "afa_no_choice_semantic_consequence",
+        "bafa_no_choice_behavior_consequence",
+        "afa_no_choice_semantic_independence",
+        "afa_choice_preserving_no_choice_lift",
+        "bafa_full_choice_separation"
+      ]
+    },
+    {
+      "file": "MemberCoalgebraMaps.lean",
+      "sha256": "e91de7f243afc75215ea30c28d7836226befe15e8e6678e480d6ee3592c1a861",
+      "theorems": [
+        "exact_members_coalgebra_iff",
+        "exact_members_identity",
+        "exact_members_comp",
+        "internal_kernel_left_exact",
+        "internal_kernel_right_exact",
+        "internal_kernel_equalized",
+        "internal_equalizes_iff",
+        "internal_coalgebra_factor_code",
+        "internal_coalgebra_factor_exact",
+        "internal_coalgebra_factor_unique",
+        "internal_quotient_coequalizer"
+      ]
+    },
+    {
+      "file": "ModalObservations.lean",
+      "sha256": "fa016ca63e3f581243b94f391885bfe7a1e581aa2696c8845e9377a4c3bbd8e4",
+      "theorems": [
+        "exact_members_modal_invariance",
+        "bisimulation_modal_invariance",
+        "internal_modal_invariance",
+        "internal_pure_modal_invariance",
+        "internal_code_same_modal_theory",
+        "pure_modal_standard_translation"
+      ]
+    },
+    {
+      "file": "ModalCountingBoundary.lean",
+      "sha256": "135224e9309d4526f6ce615f0403982eee334da6a3becca3da81d4342a3b3c33",
+      "theorems": [
+        "eval_two_members_formula",
+        "self_singleton_not_two_members",
+        "internal_self_singleton",
+        "self_singleton_pair_same_code",
+        "bafa_counting_fiber",
+        "bafa_modal_counting_counterexample",
+        "bafa_two_members_not_pure_modal",
+        "bafa_counting_not_preserved",
+        "bafa_first_order_counting_not_preserved"
+      ]
+    },
+    {
+      "file": "ModalPredicateDescent.lean",
+      "sha256": "69c0cb79a59d35a242deac681960013c544fbac3e41ec379576ad99d7df1dd95",
+      "theorems": [
+        "predicate_pullback_neg",
+        "predicate_pullback_conj",
+        "exact_members_pullback_diamond",
+        "exact_members_pullback_box",
+        "internal_predicate_pullback_invariant",
+        "internal_predicate_pullback_injective",
+        "internal_predicate_descent_iff",
+        "internal_invariant_diamond",
+        "internal_invariant_box",
+        "internal_invariant_neg",
+        "internal_invariant_conj"
+      ]
+    },
+    {
+      "file": "CrossFieldBridge.lean",
+      "sha256": "9e92a7b31970e7053dbf73ebe8e5853d2feb7f57e9c5085fd7fd431ad69df728",
+      "theorems": [
+        "pure_modal_behavior_translation_fixed",
+        "elementary_map_pure_modal_invariance",
+        "bafa_counting_predicate_not_descend",
+        "afa_no_choice_modal_cover_with_parameters"
+      ]
+    },
+    {
+      "file": "PairChoicePrinciples.lean",
+      "sha256": "5a05e39c499f5903b22ef1e8c090e7e7092c14088484504bf5019218d0913f2e",
+      "theorems": [
+        "eval_twoElementFormula",
+        "eval_selfSingletonFormula",
+        "eval_quineMembersFormula",
+        "eval_pairChoiceSentence",
+        "eval_fiberPairChoiceSentence",
+        "eval_quinePairChoiceSentence",
+        "two_element_nonempty",
+        "choice_implies_pair_choice",
+        "pair_choice_implies_fiber_pair_choice",
+        "fiber_choice_implies_fiber_pair_choice",
+        "quine_members_behavior_homogeneous",
+        "fiber_pair_choice_implies_quine_pair_choice"
+      ]
+    },
+    {
+      "file": "BafaPairChoice.lean",
+      "sha256": "1c756707731ab34c9adc5ac7aa0fc3e7af401e6b33a7dff478a963da21efbe2d",
+      "theorems": [
+        "coded_image_two_element",
+        "bafa_pair_family_into_quines",
+        "bafa_quine_pair_choice_implies_pair_choice",
+        "bafa_fiber_pair_choice_iff_pair_choice",
+        "bafa_quine_pair_choice_iff_pair_choice",
+        "bafa_fiber_pair_choice_sentence_equiv",
+        "bafa_quine_pair_choice_sentence_equiv"
+      ]
+    },
+    {
+      "file": "AfaPairChoiceBoundary.lean",
+      "sha256": "b6f4d6635240012b3c7dcd50f5eefdac46174ceff4a150415a407a06514a2ba6",
+      "theorems": [
+        "empty_family_choice_function",
+        "afa_no_homogeneous_pair",
+        "afa_fiber_pair_choice",
+        "afa_quine_pair_choice",
+        "afa_fiber_pair_choice_sentence",
+        "afa_quine_pair_choice_sentence"
+      ]
+    },
+    {
+      "file": "CoveredPairChoiceFailure.lean",
+      "sha256": "e7e2a80338e4cb5e778cfaebeac64ad4845acf54e661eb6e302f8509fb61c163",
+      "theorems": [
+        "covered_quine_pair_members",
+        "covered_mask_not_quine_pair_choice",
+        "countable_bafa_full_no_pair_choice_model",
+        "countable_bafa_pair_choice_complete_bridge",
+        "countable_bafa_pair_choice_separation"
+      ]
+    },
+    {
+      "file": "PairChoiceScreening.lean",
+      "sha256": "88c58309991f73348e0dda1513183bb66b74a09caac298a9de848a0975b04914",
+      "theorems": [
+        "bafa_translated_fiber_pair_choice",
+        "countable_bafa_pair_choice_translation_boundary"
+      ]
+    }
+  ],
+  "named_theorems": 1656,
+  "scope": "Stage 11: unchanged stage 10 baseline plus exact-two internal choice AC2, behavior-homogeneous pair choice FC2 and self-singleton pair choice QC2, actual finite first-order sentences and evaluation lemmas; BaseCollection+BAFA equivalences AC2 iff FC2 iff QC2 via one internal injective relabeling; AFA vacuity of FC2 and QC2; explicit supported quine-pair choice failure in a conditional full BAFA model, strengthened bridge and raw/behavior-translated sentence boundary. 32 new named theorems in 5 modules. No strict comparison with full AC, syntactic consistency, unqualified independence, external-bisimilarity identification or novelty claim.",
+  "scope_history": "Source files preserved from the completed internal stage 11 package.",
+  "verification_only": true
+}
